@@ -1,0 +1,120 @@
+import RedesSociais from "@/app/parts/Componentes/RedesSociais";
+import Link from "next/link";
+import Image from "next/image";
+import Logo from "../../../public/img/logo.png";
+import { ContentLinks } from "../dados/contentLinks";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import Kls from "@/public/credits/kls-full-white.png";
+
+export default function Rodape() {
+    return (
+        <>
+            <footer className="bg-blue-900  py-2 md:py-8 overflow-hidden">
+                <div className="container mx-auto px-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0  lg:gap-8  ">
+                        <a href="/" className="md:col-span-3 lg:col-span-1">
+                            <Image
+                                src={Logo}
+                                alt="logo"
+                                className="mx-auto my-4 ls-is-cached lazyloaded"
+                            />
+                        </a>
+                        <div className="my-4 md:my-0 flex flex-col items-center text-center md:text-left md:block ">
+                            <h3 className=" text-white py-3 text-2xl">Menu</h3>
+                            <hr className="w-6 mb-4 border border-solid border-orange-500" />
+
+                            <ul className="flex flex-col text-base font-light 2xl:text-lg">
+                                <li className="py-1">
+                                    <Link href="/" className="text-white hover:text-blue-800">
+                                        Início
+                                    </Link>
+                                </li>
+                                <li className="py-1">
+                                    <Link
+                                        href="/quem-somos"
+                                        className="text-white hover:text-blue-800"
+                                    >
+                                        Quem somos
+                                    </Link>
+                                </li>
+                                <li className="py-1">
+                                    <Link href="/" className="text-white hover:text-blue-800">
+                                        Produtos
+                                    </Link>
+                                </li>
+
+                                <li className="py-1">
+                                    <Link
+                                        href="/contato"
+                                        className="text-white hover:text-blue-800"
+                                    >
+                                        Contato
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="my-4 md:my-0 flex flex-col items-center text-center md:text-left md:block text-white">
+                            <h3 className=" text-white py-3 text-2xl">Contato</h3>
+                            <hr className="w-6 mb-4 border border-solid border-orange-500" />
+                            <a
+                                href={ContentLinks.email}
+                                className="hover:text-orange-500 transition "
+                            >
+                                <div className="flex gap-2 items-center text-base font-light 2xl:text-lg py-1">
+                                    <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
+                                    {ContentLinks.emailShow}
+                                </div>
+                            </a>
+                            <a
+                                href={ContentLinks.phone}
+                                target="_blank"
+                                className="hover:text-orange-500 transition"
+                            >
+                                <div className="flex gap-2 items-center text-base font-light 2xl:text-lg py-1">
+                                    <FontAwesomeIcon icon={faPhone} className="w-5 h-5" />
+                                    {ContentLinks.phoneShow}
+                                </div>
+                            </a>
+                            <a
+                                href={ContentLinks.whatsapp}
+                                target="_blank"
+                                className="hover:text-orange-500 transition"
+                            >
+                                <div className="flex gap-2 items-center text-base font-light 2xl:text-lg py-1">
+                                    <FontAwesomeIcon icon={faWhatsapp} className="w-5 h-5" />
+                                    {ContentLinks.whatsappShow}
+                                </div>
+                            </a>
+                        </div>
+                        <div className="my-4 md:my-0 flex flex-col items-center text-center md:text-left md:block text-white ">
+                            <h3 className=" py-3 text-2xl">Redes sociais</h3>
+                            <hr className="w-6 mb-4 border border-solid border-orange-500" />
+                            <div>
+                                <RedesSociais
+                                    cor="text-white py-2"
+                                    hover="hover:text-blue-800 "
+                                    estilo="flex flex-row justify-center gap-3 lg:gap-6 "
+                                />
+                            </div>
+                            <a href="https://www.agenciakls.com.br/" target="_blank">
+                                <div className="flex justify-center lg:justify-start gap-3 mt-8">
+                                    <div className="text-sm">
+                                        Desenvolvido por
+                                    </div>
+                                    <Image src={Kls} width="64" height="24" className="w-16" alt="Logo da Agência KLS" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div className="h-10 bg-orange-500 flex items-center justify-center">
+                <p className=" text-sm font-light text-white text-center uppercase">
+                    valvepress - Todos os direitos reservados
+                </p>
+            </div>
+        </>
+    );
+}
