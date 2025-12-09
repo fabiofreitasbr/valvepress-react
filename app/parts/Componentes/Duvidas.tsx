@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Duvidas() {
     return (
-        <section id="duvidas" className="bg-trueGray-100 py-10 md:py-16">
+        <section id="duvidas" className="bg-gray-100 py-10 md:py-16">
             <div className="container mx-auto px-4 ">
                 <div className="block lg:flex">
                     <div className=" lg:w-7/12">

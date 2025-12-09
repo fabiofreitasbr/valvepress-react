@@ -14,7 +14,7 @@ export default function Parceiros({cor, titulo} : PropsBg) {
     const Title = titulo;
 
     return (
-        <div className= {`${bgColor}` + " overflow-x-hidden"} > {/* "py-16  bg-trueGray-200" */}
+        <div className= {`${bgColor}` + " overflow-x-hidden"} > {/* "py-16  bg-gray-200" */}
             <div className="container mx-auto px-4 ">
                 <div className="mb-6 ">
                     <div className="text-center">
