@@ -16,7 +16,7 @@ const Categoria = () => {
                     <span className={textColor ? "text-orange-500 mx-1" : "text-black mx-1"}><a href="/"> Nossos Produtos </a></span>
                 </div>
             </div>
-            <NossosProdutos cor="" titulo="" corTitulo="" />
+            <NossosProdutos cor="" titulo="" corTitulo="" corBotao="" />
         </div>
     );
 };
