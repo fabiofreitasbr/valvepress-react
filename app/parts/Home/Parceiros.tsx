@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { ContentParceiros } from "../dados/contentParceiros";
+import Link from "next/link";
 
 interface PropsBg {
     cor: string;

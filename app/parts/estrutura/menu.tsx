@@ -9,7 +9,7 @@ import nbr28300 from "@/public/img/parceiros/nbr28300.png";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons" //faBoxesStacked, faFaucetDrip, faFlaskVial, faGasPump, faIndustry, faSeedling, faShip, faWineGlass
+import { faBoxesStacked, faChevronDown, faChevronUp, faFaucetDrip, faFlaskVial, faGasPump, faIndustry, faSeedling, faShip, faWineGlass } from "@fortawesome/free-solid-svg-icons" //faBoxesStacked, faFaucetDrip, faFlaskVial, faGasPump, faIndustry, faSeedling, faShip, faWineGlass
 
 export default function Menu() {
     const namePath = usePathname();
@@ -18,7 +18,7 @@ export default function Menu() {
     const [menuActive, setMenuActive] = useState("");
     const [menuNavigation, setMenuNavigation] = useState("-right-full");
     const [menuProduct, setMenuProduct] = useState(false);
-    //const [menuSegment, setMenuSegment] = useState(false);
+    const [menuSegment, setMenuSegment] = useState(false);
 
     const menuBurger = () => {
         const currentActive = menuActive == "" ? "is-active" : "";
@@ -31,11 +31,13 @@ export default function Menu() {
         setMenuProduct(!menuProduct);
 
     };
-    //const selectSegment = () => {
-    //  setMenuSegment(!menuSegment);
-    //};
+    const selectSegment = () => {
+        setMenuSegment(!menuSegment);
+
+    };
 
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
 
 
     return (
@@ -155,14 +157,15 @@ export default function Menu() {
                                                 </li>
 
                                             </ul>
-                                            <ul className="py-2"> <li>
-                                                <Link
-                                                    href="/tipos/valvulas-de-descarga-continua-e-periodica"
-                                                    className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
-                                                >
-                                                    Válvulas de descarga contínua e periódica
-                                                </Link>
-                                            </li>
+                                            <ul className="py-2">
+                                                <li>
+                                                    <Link
+                                                        href="/tipos/valvulas-de-descarga-continua-e-periodica"
+                                                        className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                    >
+                                                        Válvulas de descarga contínua e periódica
+                                                    </Link>
+                                                </li>
                                                 <li>
                                                     <Link
                                                         href="/tipos/valvulas-de-seguranca-e-alivio"
@@ -178,139 +181,148 @@ export default function Menu() {
                                                     >
                                                         Visores de fluxo
                                                     </Link>
-                                                </li></ul>
+                                                </li>
+                                            </ul>
                                         </div>
                                     )}
                                 </li>
-                                <li className="relative px-3 lg:px-0 text-center" >
-                                    <div className="flex items-center gap-1 lg:whitespace-nowrap" >
+                                <li className="relative px-3 lg:px-0  text-center text-white" onClick={selectSegment}>
+                                    <ul>
                                         <Link
-                                            href="/segmentos"
-                                            className=
-                                            "text-white hover:text-orange-500 relative"
+                                            href={"/segmentos"}
+                                            onClick={() => setIsOpen2(!isOpen2)}
+                                            className="text-white hover:text-orange-500 "
+
                                         >
-                                            Seguimentos atendidos{"  "}
+                                            <span className="mr-2"> Seguimentos atendidos</span>
+                                            {isOpen2 ? <FontAwesomeIcon className="md:w-3 md:h-3 xl:w-4 xl:h-4" icon={faChevronDown} /> : <FontAwesomeIcon className="md:w-3 md:h-3 xl:w-4 xl:h-4" icon={faChevronDown} />}
                                         </Link>
 
-                                    </div>
-                                    {/*
-                                    {menuSegment && (
-                                        <div className="absolute border-t-2  border-orange-500 left-0 mt-2 w-[30rem] bg-white text-sm  grid grid-cols-2 text-start" onMouseLeave={() => setMenuSegment(false)}>
-                                            <ul className="py-4">
-                                                <li>
-                                                    <Link
-                                                        href="#"
-                                                        className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
-                                                    >
-                                                        <div className="flex items-center ">
-                                                            <FontAwesomeIcon
+                                        {menuSegment && (
+                                            <div className="absolute z-20 left-0 mt-2 w-[30rem] bg-white border-t-2  border-orange-500 grid grid-cols-2 text-start" onMouseLeave={() => setMenuSegment(false)}  >
+                                                <ul className="py-2">
+                                                    <li>
+                                                        <Link
+                                                            onClick={menuBurger}
+                                                            href="/segmentos/biocombustiveis"
+                                                            className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                        >
+                                                            <div className="flex items-center ">
+                                                                <FontAwesomeIcon
+                                                                    className="w-4 h-4 px-2 text-blue-900"
+                                                                    icon={faSeedling}
+                                                                /> Biocombustíveis
+                                                            </div>
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link
+                                                            onClick={menuBurger}
+                                                            href="/segmentos/sucroalcooleiro"
+                                                            className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                        >
+                                                            <div className="flex items-center ">
+                                                                <FontAwesomeIcon
+                                                                    className="w-4 h-4 px-2 text-blue-900"
+                                                                    icon={faIndustry}
+                                                                /> Sucroalcooleiro ou Sucroenergético</div>
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link
+                                                            onClick={menuBurger}
+                                                            href="/segmentos/terminais"
+                                                            className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                        >
+                                                            <div className="flex items-center "><FontAwesomeIcon
                                                                 className="w-4 h-4 px-2 text-blue-900"
-                                                                icon={faSeedling}
-                                                            /> Biocombustíveis
-                                                        </div>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        href="#"
-                                                        className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
-                                                    >
-                                                        <div className="flex items-center ">
-                                                            <FontAwesomeIcon
+                                                                icon={faBoxesStacked}
+                                                            />  Terminais</div>
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link
+                                                            onClick={menuBurger}
+                                                            href="/segmentos/refinarias"
+                                                            className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                        >
+                                                            <div className="flex items-center "><FontAwesomeIcon
                                                                 className="w-4 h-4 px-2 text-blue-900"
                                                                 icon={faIndustry}
-                                                            /> Sucroalcooleiro ou Sucroenergético</div>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        href="#"
-                                                        className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
-                                                    >
-                                                        <div className="flex items-center "><FontAwesomeIcon
-                                                            className="w-4 h-4 px-2 text-blue-900"
-                                                            icon={faBoxesStacked}
-                                                        />  Terminais</div>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        href="#"
-                                                        className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
-                                                    >
-                                                        <div className="flex items-center "><FontAwesomeIcon
-                                                            className="w-4 h-4 px-2 text-blue-900"
-                                                            icon={faIndustry}
-                                                        />   Refinarias</div>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        href="#"
-                                                        className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
-                                                    >
-                                                        <div className="flex items-center ">
-                                                            <FontAwesomeIcon
+                                                            />   Refinarias</div>
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link
+                                                            onClick={menuBurger}
+                                                            href="/segmentos/distribuidoras"
+                                                            className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                        >
+                                                            <div className="flex items-center ">
+                                                                <FontAwesomeIcon
+                                                                    className="w-4 h-4 px-2 text-blue-900"
+                                                                    icon={faGasPump}
+                                                                />  Distribuidoras e Transportadoras de Combustíveis
+                                                            </div>
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                                <ul className="py-2">
+                                                    <li>
+                                                        <Link
+                                                            onClick={menuBurger}
+                                                            href="/segmentos/industria"
+                                                            className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                        >
+                                                            <div className="flex items-center "><FontAwesomeIcon
                                                                 className="w-4 h-4 px-2 text-blue-900"
-                                                                icon={faGasPump}
-                                                            />  Distribuidoras e Transportadoras de Combustíveis
-                                                        </div>
-                                                    </Link>
-                                                </li>
+                                                                icon={faFlaskVial}
+                                                            />  Indústria e Química e Petroquímica</div>
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link
+                                                            onClick={menuBurger}
+                                                            href="/segmentos/alimentos"
+                                                            className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                        >
+                                                            <div className="flex items-center "><FontAwesomeIcon
+                                                                className="w-4 h-4 px-2 text-blue-900"
+                                                                icon={faWineGlass}
+                                                            />  Alimentos e Bebidas</div>
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link
+                                                            onClick={menuBurger}
+                                                            href="/segmentos/saneamento"
+                                                            className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                        >
+                                                            <div className="flex items-center ">
+                                                                <FontAwesomeIcon
+                                                                    className="w-4 h-4 px-2 text-blue-900"
+                                                                    icon={faFaucetDrip}
+                                                                />   Saneamento
+                                                            </div>
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link
+                                                            onClick={menuBurger}
+                                                            href="/segmentos/embarcacoes"
+                                                            className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                        >
+                                                            <div className="flex items-center "><FontAwesomeIcon
+                                                                className="w-4 h-4 px-2 text-blue-900"
+                                                                icon={faShip}
+                                                            />   Embarcações e Tanques Flutuantes</div>
+                                                        </Link>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        )}
 
-                                            </ul>
-                                            <ul className="py-4">
-                                                <li>
-                                                    <Link
-                                                        href="#"
-                                                        className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
-                                                    >
-                                                        <div className="flex items-center "><FontAwesomeIcon
-                                                            className="w-4 h-4 px-2 text-blue-900"
-                                                            icon={faFlaskVial}
-                                                        />  Indústria e Química e Petroquímica</div>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        href="#"
-                                                        className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
-                                                    >
-                                                        <div className="flex items-center "><FontAwesomeIcon
-                                                            className="w-4 h-4 px-2 text-blue-900"
-                                                            icon={faWineGlass}
-                                                        />  Alimentos e Bebidas</div>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        href="#"
-                                                        className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
-                                                    >
-                                                        <div className="flex items-center ">
-                                                            <FontAwesomeIcon
-                                                                className="w-4 h-4 px-2 text-blue-900"
-                                                                icon={faFaucetDrip}
-                                                            />   Saneamento
-                                                        </div>
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link
-                                                        href="#"
-                                                        className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
-                                                    >
-                                                        <div className="flex items-center "><FontAwesomeIcon
-                                                            className="w-4 h-4 px-2 text-blue-900"
-                                                            icon={faShip}
-                                                        />   Embarcações e Tanques Flutuantes</div>
-                                                    </Link>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    )}
-                                    
-                                     */}
+                                    </ul>
                                 </li>
                                 <li className="px-3 lg:px-0">
                                     <Link
@@ -339,7 +351,7 @@ export default function Menu() {
                         </nav>
                     </div>
                 </div>
-            </header>
+            </header >
             <nav
                 className={
                     "block md:hidden z-40 w-full h-screen bg-blue-900 text-base text-white fixed top-26 px-6 pt-18 transition-all duration-300 ease-in-out  " +
@@ -464,20 +476,20 @@ export default function Menu() {
 
                         <li>
                             <Link
-                                onClick={menuBurger}
-                                href="/segmentos"
+                                href={"#"}
+                                onClick={() => setIsOpen2(!isOpen2)}
                                 className={
-                                    "text-red-701" +
-                                    (namePath == "/segmentos"
+                                    "" +
+                                    (namePath == "/categoria"
                                         ? " border-b-2 border-orange-500"
                                         : "")
                                 }
                             >
-                                Seguimentos atendidos
-
+                                <span className="mr-2"> Seguimentos atendidos</span>
+                                {isOpen2 ? <FontAwesomeIcon className="md:w-3 md:h-3 xl:w-4 xl:h-4" icon={faChevronUp} /> : <FontAwesomeIcon className="md:w-3 md:h-3 xl:w-4 xl:h-4" icon={faChevronDown} />}
                             </Link>
-                            {/*
-                            {menuSegment && (
+
+                            {isOpen2 && (
                                 <div className="mt-2">
                                     <ul className="py-2">
                                         <li>
@@ -598,7 +610,7 @@ export default function Menu() {
                                     </ul>
                                 </div>
                             )}
-                             */}
+
                         </li>
                         <li>
                             <Link
