@@ -57,19 +57,19 @@ export default function Menu() {
                             <Link href="/">
                                 <Image
                                     src={Logo}
-                                    className="h-[3.5rem] md:h-[4.5rem] w-auto object-contain"
+                                    className="h-14 md:h-18 w-auto object-contain"
                                     alt="Logo - ValvePress"
                                 />
                             </Link>
                             <Image
                                 src={Iso9001}
-                                className="h-[2rem] w-[2rem] md:h-[3rem] md:w-[3rem] object-contain "
+                                className="h-8 w-8 md:h-12 md:w-12 object-contain "
                                 alt="Logo - Iso9001"
                             />
-                            <Image src={nbr} className="h-[2rem] w-[2rem] md:h-[3rem] md:w-[3rem] object-contain" alt="Logo - nbr" />
+                            <Image src={nbr} className="h-8 w-8 md:h-12 md:w-12 object-contain" alt="Logo - nbr" />
                             <Image
                                 src={nbr28300}
-                                className="h-[2rem] w-[2rem] md:h-[3rem] md:w-[2rem] object-contain"
+                                className="h-8 w-8 md:h-12 md:w-8 object-contain"
                                 alt="Logo - nbr28300"
                             />
                         </div>
@@ -121,7 +121,7 @@ export default function Menu() {
                                         </Link>
                                     </div>
                                     {menuProduct && (
-                                        <div className="absolute z-20 left-0 mt-2 w-[30rem] bg-white border-t-2  border-orange-500 grid grid-cols-2 text-start" onMouseLeave={() => setMenuProduct(false)}  >
+                                        <div className="absolute z-20 left-0 mt-2 w-120 bg-white border-t-2  border-orange-500 grid grid-cols-2 text-start" onMouseLeave={() => setMenuProduct(false)}  >
                                             <ul className="py-2">
                                                 <li>
                                                     <Link
@@ -188,18 +188,17 @@ export default function Menu() {
                                 </li>
                                 <li className="relative px-3 lg:px-0  text-center text-white" onClick={selectSegment}>
                                     <ul>
-                                        <Link
-                                            href={"/segmentos"}
+                                        <a
                                             onClick={() => setIsOpen2(!isOpen2)}
                                             className="text-white hover:text-orange-500 "
 
                                         >
                                             <span className="mr-2"> Seguimentos atendidos</span>
                                             {isOpen2 ? <FontAwesomeIcon className="md:w-3 md:h-3 xl:w-4 xl:h-4" icon={faChevronDown} /> : <FontAwesomeIcon className="md:w-3 md:h-3 xl:w-4 xl:h-4" icon={faChevronDown} />}
-                                        </Link>
+                                        </a>
 
                                         {menuSegment && (
-                                            <div className="absolute z-20 left-0 mt-2 w-[30rem] bg-white border-t-2  border-orange-500 grid grid-cols-2 text-start" onMouseLeave={() => setMenuSegment(false)}  >
+                                            <div className="absolute z-20 left-0 mt-2 w-120 bg-white border-t-2  border-orange-500 grid grid-cols-2 text-start" onMouseLeave={() => setMenuSegment(false)}  >
                                                 <ul className="py-2">
                                                     <li>
                                                         <Link

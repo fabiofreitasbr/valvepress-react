@@ -65,7 +65,7 @@ export default function Banner() {
                     {ContentBanner.map((serviceSingle) => (
                         <SplideSlide
                             key={serviceSingle.slug}
-                            className="bg-cover bg-center h-[20rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem] relative"
+                            className="bg-cover bg-center h-80 sm:h-80 md:h-100 lg:h-120 xl:h-140 relative"
                             style={{ backgroundImage: `url(${serviceSingle.img})` }}
                         >
                             <div className="container mx-auto px-10 md:px-4 h-full flex justify-center items-center md:items-start flex-col ">
