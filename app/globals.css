@@ -1,6 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Variáveis globais */
+:root {
+  --font-bodoni: "Bodoni Moda", serif;
+
+  --color-blue-900: #163977;
+  --color-orange-500: #F37135;
+  --color-lime-500: #92C03E;
+  --color-trueGray-100: #F7F7F7;
+  --color-trueGray-200: #EBEBEB;
+}
+
+/* Fonte padrão */
+body {
+  font-family: var(--font-bodoni), sans-serif;
+}
 
 .hamburger {
     padding-top: 2px;
