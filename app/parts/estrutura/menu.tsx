@@ -25,6 +25,11 @@ export default function Menu() {
         const currentNavigation = menuActive == "" ? "right-0" : "-right-full";
         setMenuActive(currentActive);
         setMenuNavigation(currentNavigation);
+         if (currentActive === "is-active") {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
     };
 
     const handleMouseEnterProduct = () => {
@@ -356,7 +361,7 @@ export default function Menu() {
             </header >
             <nav
                 className={
-                    "block md:hidden z-40 w-full h-screen bg-blue-900 text-base text-white fixed top-26 px-6 pt-18 transition-all duration-300 ease-in-out  " +
+                    "block md:hidden z-40 w-full h-screen bg-blue-900 text-base text-white fixed top-26 px-6 pt-10 transition-all duration-300 ease-in-out  " +
                     menuNavigation
                 }
             >
@@ -498,11 +503,11 @@ export default function Menu() {
                                             <Link
                                                 onClick={menuBurger}
                                                 href="#"
-                                                className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center ">
                                                     <FontAwesomeIcon
-                                                        className="w-4 h-4 px-2 text-blue-900"
+                                                        className="w-4 h-4 px-2 text-white"
                                                         icon={faSeedling}
                                                     /> Biocombustíveis
                                                 </div>
@@ -512,11 +517,11 @@ export default function Menu() {
                                             <Link
                                                 onClick={menuBurger}
                                                 href="#"
-                                                className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center ">
                                                     <FontAwesomeIcon
-                                                        className="w-4 h-4 px-2 text-blue-900"
+                                                        className="w-4 h-4 px-2 text-white"
                                                         icon={faIndustry}
                                                     /> Sucroalcooleiro ou Sucroenergético</div>
                                             </Link>
@@ -525,10 +530,10 @@ export default function Menu() {
                                             <Link
                                                 onClick={menuBurger}
                                                 href="#"
-                                                className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center "><FontAwesomeIcon
-                                                    className="w-4 h-4 px-2 text-blue-900"
+                                                    className="w-4 h-4 px-2 text-white"
                                                     icon={faBoxesStacked}
                                                 />  Terminais</div>
                                             </Link>
@@ -537,10 +542,10 @@ export default function Menu() {
                                             <Link
                                                 onClick={menuBurger}
                                                 href="#"
-                                                className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center "><FontAwesomeIcon
-                                                    className="w-4 h-4 px-2 text-blue-900"
+                                                    className="w-4 h-4 px-2 text-white"
                                                     icon={faIndustry}
                                                 />   Refinarias</div>
                                             </Link>
@@ -549,11 +554,11 @@ export default function Menu() {
                                             <Link
                                                 onClick={menuBurger}
                                                 href="#"
-                                                className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center ">
                                                     <FontAwesomeIcon
-                                                        className="w-4 h-4 px-2 text-blue-900"
+                                                        className="w-4 h-4 px-2 text-white"
                                                         icon={faGasPump}
                                                     />  Distribuidoras e Transportadoras de Combustíveis
                                                 </div>
@@ -563,10 +568,10 @@ export default function Menu() {
                                             <Link
                                                 onClick={menuBurger}
                                                 href="#"
-                                                className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center "><FontAwesomeIcon
-                                                    className="w-4 h-4 px-2 text-blue-900"
+                                                    className="w-4 h-4 px-2 text-white"
                                                     icon={faFlaskVial}
                                                 />  Indústria e Química e Petroquímica</div>
                                             </Link>
@@ -575,10 +580,10 @@ export default function Menu() {
                                             <Link
                                                 onClick={menuBurger}
                                                 href="#"
-                                                className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center "><FontAwesomeIcon
-                                                    className="w-4 h-4 px-2 text-blue-900"
+                                                    className="w-4 h-4 px-2 text-white"
                                                     icon={faWineGlass}
                                                 />  Alimentos e Bebidas</div>
                                             </Link>
@@ -587,11 +592,11 @@ export default function Menu() {
                                             <Link
                                                 onClick={menuBurger}
                                                 href="#"
-                                                className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center ">
                                                     <FontAwesomeIcon
-                                                        className="w-4 h-4 px-2 text-blue-900"
+                                                        className="w-4 h-4 px-2 text-white"
                                                         icon={faFaucetDrip}
                                                     />   Saneamento
                                                 </div>
@@ -601,10 +606,10 @@ export default function Menu() {
                                             <Link
                                                 onClick={menuBurger}
                                                 href="#"
-                                                className="block px-4 py-2 text-orange-500 hover:bg-gray-200 text-xs font-medium"
+                                                className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center "><FontAwesomeIcon
-                                                    className="w-4 h-4 px-2 text-blue-900"
+                                                    className="w-4 h-4 px-2 text-white"
                                                     icon={faShip}
                                                 />   Embarcações e Tanques Flutuantes</div>
                                             </Link>
