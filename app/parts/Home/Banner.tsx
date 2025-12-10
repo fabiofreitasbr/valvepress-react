@@ -23,7 +23,7 @@ const ContentBanner = [
         text: "Assistência técnica",
         text2: "nosso compromisso em atender a sua demanda",
         slug: "Assistência",
-        img: "img/banner-2.png",
+        img: "/img/banner-2.png",
     },
     {
         text: "Montagens de skids",
