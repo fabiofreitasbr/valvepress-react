@@ -86,7 +86,7 @@ const Contato = () => {
                 </a>
               </div>
             </div>
-            <div className="md:px-10 order-1">
+            <div className=" order-1">
               <div className="p-6 shadow-xl rounded-xl ">
                 <h2 className="font-base text-blue-900 text-xl md:text-2xl my-2 py-4">
                   Entre em contato conosco

@@ -62,7 +62,7 @@ export default function Contato() {
                 </div>
               </div>
             </div>
-            <div className="md:px-10 ">
+            <div className="">
               <div className="p-6 shadow-xl rounded-xl ">
                 <h3 className="font-base text-blue-900 text-xl md:text-2xl my-2 py-4">
                   Nós ligamos para você!

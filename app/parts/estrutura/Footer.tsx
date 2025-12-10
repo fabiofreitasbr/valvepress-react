@@ -14,18 +14,18 @@ export default function Rodape() {
             <footer className="bg-blue-900  py-2 md:py-8 overflow-hidden">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0  lg:gap-8  ">
-                        <Link href="/" className="md:col-span-3 lg:col-span-1">
+                        <Link href="/" className="sm:col-span-2 md:col-span-3 lg:col-span-1">
                             <Image
                                 src={Logo}
                                 alt="logo"
                                 className="mx-auto my-4 ls-is-cached lazyloaded"
                             />
                         </Link>
-                        <div className="my-4 md:my-0 flex flex-col items-center text-center md:text-left md:block ">
+                        <div className="my-4 md:my-0 flex flex-col items-center justify-center md:items-start sm:text-start    md:text-left  text-white mx-auto">
                             <h3 className=" text-white py-3 text-2xl">Menu</h3>
                             <hr className="w-6 mb-4 border border-solid border-orange-500" />
 
-                            <ul className="flex flex-col text-base font-light 2xl:text-lg">
+                            <ul className="flex flex-col text-center sm:text-start text-base font-light 2xl:text-lg">
                                 <li className="py-1">
                                     <Link href="/" className="text-white hover:text-orange-500">
                                         Início
@@ -55,14 +55,14 @@ export default function Rodape() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="my-4 md:my-0 flex flex-col items-center text-center md:text-left md:block text-white whitespace-normal">
-                            <h3 className=" text-white py-3 text-2xl">Contato</h3>
+                        <div className="my-4 md:my-0 flex flex-col items-center sm:items-start text-center sm:text-start   md:text-left  text-white  break-normal md:break-all">
+                            <h3 className=" text-white py-3 text-2xl ">Contato</h3>
                             <hr className="w-6 mb-4 border border-solid border-orange-500" />
                             <a
                                 href={ContentLinks.email}
                                 className="hover:text-orange-500 transition "
                             >
-                                <div className="flex gap-2 items-center text-base font-light 2xl:text-lg py-1 whitespace-normal">
+                                <div className="flex gap-2 items-center sm:text-start  text-base font-light 2xl:text-lg py-1 md:max-w-[210px] xl:max-w-[400px]">
                                     <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
                                     {ContentLinks.emailShow}
                                 </div>
@@ -88,7 +88,7 @@ export default function Rodape() {
                                 </div>
                             </a>
                         </div>
-                        <div className="my-4 md:my-0 flex flex-col items-center text-center md:text-left md:block text-white ">
+                        <div className="sm:col-span-2 md:col-span-1 my-4 md:my-0 flex flex-col items-center text-center md:text-left md:block text-white ">
                             <h3 className=" py-3 text-2xl">Redes sociais</h3>
                             <hr className="w-6 mb-4 border border-solid border-orange-500" />
                             <div>
@@ -111,7 +111,7 @@ export default function Rodape() {
                 </div>
             </footer>
             <div className="h-10 bg-orange-500 flex items-center justify-center">
-                <p className=" text-sm font-light text-white text-center uppercase">
+                <p className="text-xs sm:text-sm font-light text-white text-center uppercase">
                     valvepress - Todos os direitos reservados
                 </p>
             </div>

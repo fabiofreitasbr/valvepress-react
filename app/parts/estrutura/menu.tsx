@@ -379,7 +379,7 @@ export default function Menu() {
                                 href="/"
                                 className={
                                     "text-white hover:text-orange-500 transition-all " +
-                                    (namePath == "/" ? " border-b-2 py-1 border-orange-500" : "")
+                                    (namePath == "/" ? " border-b-2 py-2 border-orange-500" : "")
                                 }
                             >
                                 {" "}
@@ -393,7 +393,7 @@ export default function Menu() {
                                 className={
                                     "text-white hover:text-orange-500 transition-all " +
                                     (namePath == "/quem-somos"
-                                        ? " border-b-2 py-1 border-orange-500"
+                                        ? " border-b-2 py-2 border-orange-500"
                                         : "")
                                 }
                             >
@@ -638,7 +638,7 @@ export default function Menu() {
                                 className={
                                     "text-white hover:text-orange-500 transition-all " +
                                     (namePath == "/contato"
-                                        ? " border-b-2 py-1 border-orange-500"
+                                        ? " border-b-2 py-2 border-orange-500"
                                         : "")
                                 }
                             >
