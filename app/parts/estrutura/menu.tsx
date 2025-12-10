@@ -25,11 +25,7 @@ export default function Menu() {
         const currentNavigation = menuActive == "" ? "right-0" : "-right-full";
         setMenuActive(currentActive);
         setMenuNavigation(currentNavigation);
-        if (currentActive === "is-active") {
-            document.body.classList.add("overflow-hidden");
-        } else {
-            document.body.classList.remove("overflow-hidden");
-        }
+        
     };
     const handleEnterProduct = () => {
         setMenuProduct(true);
@@ -495,7 +491,7 @@ export default function Menu() {
                                 href={"#"}
                                 onClick={() => {
                                     setIsOpen2(!isOpen2);
-                                    setIsOpen(false); // fecha o primeiro menu
+                                    setIsOpen(false); // fecha o dropdown de produtos
                                 }}
                                 className={
                                     "" +
@@ -514,7 +510,7 @@ export default function Menu() {
                                         <li>
                                             <Link
                                                 onClick={menuBurger}
-                                                href="#"
+                                                href="/segmentos/biocombustiveis"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center ">
@@ -528,7 +524,7 @@ export default function Menu() {
                                         <li>
                                             <Link
                                                 onClick={menuBurger}
-                                                href="#"
+                                                href="/segmentos/sucroalcooleiro"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center ">
@@ -541,7 +537,7 @@ export default function Menu() {
                                         <li>
                                             <Link
                                                 onClick={menuBurger}
-                                                href="#"
+                                                href="/segmentos/terminais"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center "><FontAwesomeIcon
@@ -553,7 +549,7 @@ export default function Menu() {
                                         <li>
                                             <Link
                                                 onClick={menuBurger}
-                                                href="#"
+                                                href="/segmentos/refinarias"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center "><FontAwesomeIcon
@@ -565,7 +561,7 @@ export default function Menu() {
                                         <li>
                                             <Link
                                                 onClick={menuBurger}
-                                                href="#"
+                                                href="/segmentos/distribuidoras"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center ">
@@ -579,7 +575,7 @@ export default function Menu() {
                                         <li>
                                             <Link
                                                 onClick={menuBurger}
-                                                href="#"
+                                                href="/segmentos/industria"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center "><FontAwesomeIcon
@@ -591,7 +587,7 @@ export default function Menu() {
                                         <li>
                                             <Link
                                                 onClick={menuBurger}
-                                                href="#"
+                                                href="/segmentos/alimentos"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center "><FontAwesomeIcon
@@ -603,7 +599,7 @@ export default function Menu() {
                                         <li>
                                             <Link
                                                 onClick={menuBurger}
-                                                href="#"
+                                                href="/segmentos/saneamento"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center ">
@@ -617,7 +613,7 @@ export default function Menu() {
                                         <li>
                                             <Link
                                                 onClick={menuBurger}
-                                                href="#"
+                                                href="/segmentos/embarcacoes"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
                                                 <div className="flex items-center "><FontAwesomeIcon
