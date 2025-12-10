@@ -10,11 +10,11 @@ const Terminais = () => {
     return (
         <div className="relative">
             <HeaderTitle title="Terminais" />
-            <section className="py-10 md:py-16 ">
+            <section className="py-10 lg:py-16 ">
                 <div className="container mx-auto px-4 ">
                     <div className="block lg:flex lg:flex-row-reverse  ">
-                        <div className="lg:w-3/6 flex justify-content items-center">
-                            <Image src={Terminal} className="lg:w-2/3 w-1/2 sm:w-1/2 xl:w-1/2 mx-auto md:mb-6 mb-4 aspect-square object-cover rounded-full" alt="" />
+                        <div className="lg:w-3/6 flex justify-content items-center ">
+                            <Image src={Terminal} className="lg:w-2/3 w-1/2 sm:w-1/2 xl:w-1/2 mx-auto md:mb-6 mb-4 aspect-square object-cover rounded-full border-8 border-zinc-200" alt="" />
                         </div>
                         <div className="lg:w-3/6 text-zinc-600  ">
                             <div className="text-xs text-justify md:text-left md:text-xl lg:text-base 2xl:text-xl text-zinc-700 font-reading">
@@ -35,7 +35,7 @@ const Terminais = () => {
                     </div>
                 </div>
             </section>
-            <NossosProdutos cor="bg-blue-900" titulo="Produtos" corTitulo="text-white" corBotao="bg-white text-blue-900"/>
+            <NossosProdutos cor="bg-blue-900" titulo="Produtos" corTitulo="text-white" corBotao="bg-white text-blue-900" />
             <></>
             <section className="py-10 md:py-16">
                 <div className="container mx-auto px-4 ">
@@ -48,7 +48,10 @@ const Terminais = () => {
                     </div>
                 </div>
             </section>
+
+
         </div>
+
     );
 };
 export default Terminais;

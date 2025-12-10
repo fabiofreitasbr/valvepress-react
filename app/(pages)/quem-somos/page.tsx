@@ -9,17 +9,14 @@ const QuemSomos = () => {
     return (
         <div className="">
             <HeaderTitle title="QUEM SOMOS" />
-            <section className="py-10 md:py-16 ">
+            <section className="py-10 lg:py-16 ">
                 <div className="container mx-auto px-4 ">
                     <div className="block lg:flex lg:flex-row-reverse  ">
                         <div className="lg:w-3/6 flex justify-content items-center">
-                            <Image src={Equipe} className="w-1/2 lg:w-2/3 mx-auto " alt="" />
+                            <Image src={Equipe} className="lg:w-2/3 w-1/2 sm:w-1/2 xl:w-1/2 mx-auto md:mb-6 mb-4 aspect-square object-cover rounded-full " alt="" />
                         </div>
                         <div className="lg:w-3/6 text-zinc-600  ">
-                            <div className="text-base text-justify md:text-left md:text-xl lg:text-base 2xl:text-xl text-zinc-700 font-reading">
-                                <h2 className="text-xl md:text-2xl py-4 text-blue-900 uppercase font-bold">
-                                    Quem Somos:
-                                </h2>
+                            <div className="text-xs text-justify md:text-left md:text-xl lg:text-base 2xl:text-xl text-zinc-700 font-reading">
                                 <p className="mb-4">
                                     Somos uma empresa contemporânea que já nasceu com o know-how de mais de 50 anos no ramo industrial. Investimos no aprimoramento de nossos colaboradores e enxergamos os desafios como grandes oportunidades de crescimento.
                                     Atuamos Como Fabricante De Equipamentos Industriais, Tais Como:

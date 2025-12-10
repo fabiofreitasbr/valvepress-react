@@ -25,7 +25,7 @@ export default function Menu() {
         const currentNavigation = menuActive == "" ? "right-0" : "-right-full";
         setMenuActive(currentActive);
         setMenuNavigation(currentNavigation);
-        
+
     };
     const handleEnterProduct = () => {
         setMenuProduct(true);
@@ -76,7 +76,7 @@ export default function Menu() {
                             />
                         </div>
                         <nav className="items-center flex  ">
-                            <ul className="hidden md:flex items-center text-xs lg:text-sm xl:text-base  2xl:gap-8 uppercase font-normal lg:gap-2">
+                            <ul className="hidden md:flex items-center text-xs lg:text-sm xl:text-base  2xl:gap-8 uppercase font-normal lg:gap-4">
                                 <li className="px-3 lg:px-0">
                                     <Link
                                         href="/"
@@ -106,7 +106,7 @@ export default function Menu() {
                                     </Link>
                                 </li>
                                 <li className="relative px-3 lg:px-0  text-center " onMouseEnter={handleEnterProduct}
-                                   
+
 
                                 >
                                     <div className="flex flex-wrap items-center relative gap-1 " >
@@ -117,12 +117,12 @@ export default function Menu() {
                                                 setIsOpen2(false); // fecha o outro menu
                                             }}
                                             className=
-                                            "text-white hover:text-orange-500 "
+                                            "text-white hover:text-orange-500 flex items-center gap-2"
 
                                         >
-                                            Linhas de {""}Produtos
+                                            <span>Linhas de Produtos</span>
                                             <FontAwesomeIcon
-                                                className="md:w-3 md:h-3 xl:w-4 xl:h-4 px-2 "
+                                                className="md:w-3 md:h-3 xl:w-4 xl:h-4"
                                                 icon={faChevronDown}
                                             />
                                         </Link>
@@ -197,14 +197,15 @@ export default function Menu() {
                                     <ul>
                                         <Link href=""
                                             onMouseEnter={handleEnterSegment}
-                                            className="text-white hover:text-orange-500 "
+                                            className="text-white hover:text-orange-500 flex items-center gap-2"
 
                                         >
-                                            Segmentos atendidos
+                                            <span>Segmentos atendidos</span>
                                             <FontAwesomeIcon
-                                                className="md:w-3 md:h-3 xl:w-4 xl:h-4 px-2 "
+                                                className="md:w-3 md:h-3 xl:w-4 xl:h-4"
                                                 icon={faChevronDown}
                                             />
+
                                         </Link>
 
                                         {menuSegment && (
