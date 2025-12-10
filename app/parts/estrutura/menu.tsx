@@ -27,14 +27,32 @@ export default function Menu() {
         setMenuNavigation(currentNavigation);
     };
 
+    const handleMouseEnterProduct = () => {
+        setMenuProduct(true);
+    };
+
+    const handleMouseLeaveProduct = () => {
+        setMenuProduct(false);
+    };
+    const handleMouseEnterSegment = () => {
+        setMenuSegment(true);
+    };
+
+    const handleMouseLeaveSegment = () => {
+        setMenuSegment(false);
+    };
+    {/*
+    
     const selectProduct = () => {
         setMenuProduct(!menuProduct);
 
     };
+    
     const selectSegment = () => {
         setMenuSegment(!menuSegment);
 
     };
+     */}
 
     const [isOpen, setIsOpen] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
@@ -103,19 +121,18 @@ export default function Menu() {
                                         Quem Somos
                                     </Link>
                                 </li>
-                                <li className="relative px-3 lg:px-0  text-center " onClick={selectProduct} >
+                                <li className="relative px-3 lg:px-0  text-center " onMouseEnter={handleMouseEnterProduct}
+                                     >
                                     <div className="flex items-center relative gap-1 lg:whitespace-nowrap" >
                                         <Link
-                                            href="/categoria"
+                                            href=""
                                             className=
                                             "text-white hover:text-orange-500 "
 
                                         >
                                             Linhas de Produtos
-                                        </Link>
-                                        <Link href={"#"} className="hover:text-orange-500 text-white" >
                                             <FontAwesomeIcon
-                                                className="md:w-3 md:h-3 xl:w-4 xl:h-4 "
+                                                className="md:w-3 md:h-3 xl:w-4 xl:h-4 px-2 "
                                                 icon={faChevronDown}
                                             />
                                         </Link>
@@ -186,19 +203,23 @@ export default function Menu() {
                                         </div>
                                     )}
                                 </li>
-                                <li className="relative px-3 lg:px-0  text-center text-white" onClick={selectSegment}>
+                                <li className="relative px-3 lg:px-0  text-center text-white" onMouseEnter={handleMouseEnterSegment}
+                                    >
                                     <ul>
-                                        <a
-                                            onClick={() => setIsOpen2(!isOpen2)}
+                                        <Link href=""
+                                            
                                             className="text-white hover:text-orange-500 "
 
                                         >
-                                            <span className="mr-2"> Seguimentos atendidos</span>
-                                            {isOpen2 ? <FontAwesomeIcon className="md:w-3 md:h-3 xl:w-4 xl:h-4" icon={faChevronDown} /> : <FontAwesomeIcon className="md:w-3 md:h-3 xl:w-4 xl:h-4" icon={faChevronDown} />}
-                                        </a>
+                                             Seguimentos atendidos
+                                             <FontAwesomeIcon
+                                                className="md:w-3 md:h-3 xl:w-4 xl:h-4 px-2 "
+                                                icon={faChevronDown}
+                                            />
+                                        </Link>
 
                                         {menuSegment && (
-                                            <div className="absolute z-20 left-0 mt-2 w-120 bg-white border-t-2  border-orange-500 grid grid-cols-2 text-start" onMouseLeave={() => setMenuSegment(false)}  >
+                                            <div className="absolute z-20 left-0 mt-2 w-120 bg-white border-t-2  border-orange-500 grid grid-cols-2 text-start" onMouseLeave={() => setMenuSegment(false)}   >
                                                 <ul className="py-2">
                                                     <li>
                                                         <Link
