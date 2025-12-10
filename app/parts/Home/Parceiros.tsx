@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { ContentParceiros } from "../dados/contentParceiros";
-import Link from "next/link";
 
 interface PropsBg {
     cor: string;
@@ -27,9 +26,9 @@ export default function Parceiros({cor, titulo} : PropsBg) {
                     {ContentParceiros.map((serviceSingle) => (
                         <div
                             key={serviceSingle.slug}
-                            className="bg-white  sm:w-1/3 md:w-[15rem] lg:w-1/8  p-4 rounded-xl flex justify-center items-center"
+                            className="bg-white  sm:h-40 lg:h-30 2xl:h-50 sm:w-auto md:w-60 lg:w-1/8  p-4 rounded-xl flex justify-center items-center"
                         >
-                            <div className="w-[6rem] lg:w-full  lg:h-auto">
+                            <div className="w-24 lg:w-full  lg:h-auto">
 
                                 <Image
                                     src={serviceSingle.img}

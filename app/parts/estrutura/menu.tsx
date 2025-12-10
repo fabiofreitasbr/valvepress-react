@@ -100,7 +100,7 @@ export default function Menu() {
                                         <span
                                             className={
                                                 namePath === "/quem-somos"
-                                                    ? "border-b-2 py-2 border-orange-500 text-center"
+                                                    ? "border-b-2 border-orange-500 py-2 "
                                                     : "" 
                                             }
                                         > Quem Somos

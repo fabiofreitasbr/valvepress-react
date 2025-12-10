@@ -55,14 +55,14 @@ export default function Rodape() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="my-4 md:my-0 flex flex-col items-center text-center md:text-left md:block text-white">
+                        <div className="my-4 md:my-0 flex flex-col items-center text-center md:text-left md:block text-white whitespace-normal">
                             <h3 className=" text-white py-3 text-2xl">Contato</h3>
                             <hr className="w-6 mb-4 border border-solid border-orange-500" />
                             <a
                                 href={ContentLinks.email}
                                 className="hover:text-orange-500 transition "
                             >
-                                <div className="flex gap-2 items-center text-base font-light 2xl:text-lg py-1">
+                                <div className="flex gap-2 items-center text-base font-light 2xl:text-lg py-1 whitespace-normal">
                                     <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
                                     {ContentLinks.emailShow}
                                 </div>
@@ -95,7 +95,7 @@ export default function Rodape() {
                                 <RedesSociais
                                     cor="text-white py-2"
                                     hover="hover:text-orange-500 "
-                                    estilo="flex flex-row justify-center gap-3 lg:gap-6 "
+                                    estilo="flex flex-row justify-center gap-3 lg:gap-6 justify-start"
                                 />
                             </div>
                             <a href="https://www.agenciakls.com.br/" target="_blank">
