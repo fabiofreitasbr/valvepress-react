@@ -16,8 +16,8 @@ const QuemSomos = () => {
                             <Image src={Equipe} className="w-1/2 lg:w-2/3 mx-auto " alt="" />
                         </div>
                         <div className="lg:w-3/6 text-zinc-600  ">
-                            <div className="text-base text-justify md:text-left xl:text-2xl text-zinc-700 font-reading">
-                                <h2 className="text-xl 2xl:text-2xl py-4 text-blue-900 uppercase font-bold">
+                            <div className="text-base text-justify md:text-left md:text-xl lg:text-base 2xl:text-2xl text-zinc-700 font-reading">
+                                <h2 className="text-xl md:text-2xl py-4 text-blue-900 uppercase font-bold">
                                     Quem Somos:
                                 </h2>
                                 <p className="mb-4">

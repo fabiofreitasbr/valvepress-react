@@ -4,9 +4,10 @@ import HeaderTitle from "@/app/parts/estrutura/headerTitle";
 import React from "react";
 import Image from "next/image";
 import Gf from "@/public/img/produtos/visores-fluxo/gf.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-
+import { ContentLinks } from "@/app/parts/dados/contentLinks";
+import Link from "next/link";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { faDownload } from "@fortawesome/free-solid-svg-icons";
 const contentModelo = {
     produtos: [
         {
@@ -57,10 +58,10 @@ export default function FluxoGF() {
                                         <h1 className="mt-1 text-center md:text-left text-base md:text-2xl  text-orange-500 uppercase font-medium">{produto.title}</h1>
                                         <p className="text-center md:text-left text-sm md:text-lg text-gray-300 py-2">{produto.text}</p>
                                     </div>
-                                    <button type="button" className="bg-blue-900 hover:bg-blue-950 mx-auto md:mx-0 transition text-white font-medium rounded-full my-4 py-3 px-4 md:px-10 xl:px-16 block text-xs sm:text-base lg:text-lg uppercase">
+                                    {/*<button type="button" className="bg-blue-900 hover:bg-blue-950 mx-auto md:mx-0 transition text-white font-medium rounded-full my-4 py-3 px-4 md:px-10 xl:px-16 block text-xs sm:text-base lg:text-lg uppercase">
                                         <div className="flex gap-2 items-center justify-center">
-                                            <FontAwesomeIcon icon={faDownload} className=" w-5 h-5" /> Download do Prospecto em PDF da LC
-                                        </div></button>
+                                            <FontAwesomeIcon icon={faDownload} className=" w-5 h-5" /> Download do Prospecto em PDF da GF
+                                        </div></button> */}
                                 </div>
                             </div>
                         </div>
@@ -94,7 +95,9 @@ export default function FluxoGF() {
                             </div>
                         ))}
                     </div>
-                    <button type="button" className="bg-blue-900 hover:bg-blue-950  my-4 transition text-white font-medium rounded-full mx-auto py-2 px-4 md:px-10 xl:px-16 block text-lg uppercase">Solicite um orçamento</button>
+                    <Link href={ContentLinks.whatsapp} className="w-full block"
+                        target="_blank"> <button type="button" className="bg-blue-900 hover:bg-blue-950  my-4 transition text-white font-medium rounded-full mx-auto py-2 px-4 md:px-10 xl:px-16 block text-lg uppercase">Solicite um orçamento</button>
+                    </Link>
                 </div>
             </section>
         </div>

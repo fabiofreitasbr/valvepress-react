@@ -31,28 +31,10 @@ export default function Menu() {
         setMenuProduct(true);
     };
 
-    const handleMouseLeaveProduct = () => {
-        setMenuProduct(false);
-    };
+
     const handleMouseEnterSegment = () => {
         setMenuSegment(true);
     };
-
-    const handleMouseLeaveSegment = () => {
-        setMenuSegment(false);
-    };
-    {/*
-    
-    const selectProduct = () => {
-        setMenuProduct(!menuProduct);
-
-    };
-    
-    const selectSegment = () => {
-        setMenuSegment(!menuSegment);
-
-    };
-     */}
 
     const [isOpen, setIsOpen] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
@@ -107,7 +89,7 @@ export default function Menu() {
                                         Início
                                     </Link>
                                 </li>
-                                <li className="px-3 lg:px-0 text-center lg:whitespace-nowrap">
+                                <li className="px-3 lg:px-0 text-center ">
                                     <Link
                                         href="/quem-somos"
                                         className={
@@ -122,15 +104,15 @@ export default function Menu() {
                                     </Link>
                                 </li>
                                 <li className="relative px-3 lg:px-0  text-center " onMouseEnter={handleMouseEnterProduct}
-                                     >
-                                    <div className="flex items-center relative gap-1 lg:whitespace-nowrap" >
+                                >
+                                    <div className="flex flex-wrap items-center relative gap-1 " >
                                         <Link
                                             href=""
                                             className=
                                             "text-white hover:text-orange-500 "
 
                                         >
-                                            Linhas de Produtos
+                                            Linhas de {""}Produtos
                                             <FontAwesomeIcon
                                                 className="md:w-3 md:h-3 xl:w-4 xl:h-4 px-2 "
                                                 icon={faChevronDown}
@@ -138,7 +120,7 @@ export default function Menu() {
                                         </Link>
                                     </div>
                                     {menuProduct && (
-                                        <div className="absolute z-20 left-0 mt-2 w-120 bg-white border-t-2  border-orange-500 grid grid-cols-2 text-start" onMouseLeave={() => setMenuProduct(false)}  >
+                                        <div className="absolute z-20 left-0 mt-2 2xl:w-120 bg-white border-t-2  border-orange-500 grid grid-col 2xl:grid-cols-2 text-start" onMouseLeave={() => setMenuProduct(false)}  >
                                             <ul className="py-2">
                                                 <li>
                                                     <Link
@@ -204,22 +186,22 @@ export default function Menu() {
                                     )}
                                 </li>
                                 <li className="relative px-3 lg:px-0  text-center text-white" onMouseEnter={handleMouseEnterSegment}
-                                    >
+                                >
                                     <ul>
                                         <Link href=""
-                                            
+
                                             className="text-white hover:text-orange-500 "
 
                                         >
-                                             Seguimentos atendidos
-                                             <FontAwesomeIcon
+                                            Segmentos atendidos
+                                            <FontAwesomeIcon
                                                 className="md:w-3 md:h-3 xl:w-4 xl:h-4 px-2 "
                                                 icon={faChevronDown}
                                             />
                                         </Link>
 
                                         {menuSegment && (
-                                            <div className="absolute z-20 left-0 mt-2 w-120 bg-white border-t-2  border-orange-500 grid grid-cols-2 text-start" onMouseLeave={() => setMenuSegment(false)}   >
+                                            <div className="absolute z-20 left-0 mt-2 2xl:w-120 bg-white border-t-2  border-orange-500 grid grid-col 2xl:grid-cols-2 text-start" onMouseLeave={() => setMenuSegment(false)}   >
                                                 <ul className="py-2">
                                                     <li>
                                                         <Link
@@ -505,7 +487,7 @@ export default function Menu() {
                                         : "")
                                 }
                             >
-                                <span className="mr-2"> Seguimentos atendidos</span>
+                                <span className="mr-2"> Segmentos atendidos</span>
                                 {isOpen2 ? <FontAwesomeIcon className="md:w-3 md:h-3 xl:w-4 xl:h-4" icon={faChevronUp} /> : <FontAwesomeIcon className="md:w-3 md:h-3 xl:w-4 xl:h-4" icon={faChevronDown} />}
                             </Link>
 

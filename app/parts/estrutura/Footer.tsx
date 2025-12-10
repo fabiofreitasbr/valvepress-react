@@ -27,20 +27,20 @@ export default function Rodape() {
 
                             <ul className="flex flex-col text-base font-light 2xl:text-lg">
                                 <li className="py-1">
-                                    <Link href="/" className="text-white hover:text-blue-800">
+                                    <Link href="/" className="text-white hover:text-orange-500">
                                         Início
                                     </Link>
                                 </li>
                                 <li className="py-1">
                                     <Link
                                         href="/quem-somos"
-                                        className="text-white hover:text-blue-800"
+                                        className="text-white hover:text-orange-500"
                                     >
                                         Quem somos
                                     </Link>
                                 </li>
                                 <li className="py-1">
-                                    <Link href="/" className="text-white hover:text-blue-800">
+                                    <Link href="/" className="text-white hover:text-orange-500">
                                         Produtos
                                     </Link>
                                 </li>
@@ -48,7 +48,7 @@ export default function Rodape() {
                                 <li className="py-1">
                                     <Link
                                         href="/contato"
-                                        className="text-white hover:text-blue-800"
+                                        className="text-white hover:text-orange-500"
                                     >
                                         Contato
                                     </Link>
@@ -94,7 +94,7 @@ export default function Rodape() {
                             <div>
                                 <RedesSociais
                                     cor="text-white py-2"
-                                    hover="hover:text-blue-800 "
+                                    hover="hover:text-orange-500 "
                                     estilo="flex flex-row justify-center gap-3 lg:gap-6 "
                                 />
                             </div>
