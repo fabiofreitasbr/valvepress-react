@@ -14,10 +14,10 @@ const Terminais = () => {
                 <div className="container mx-auto px-4 ">
                     <div className="block lg:flex lg:flex-row-reverse  ">
                         <div className="lg:w-3/6 flex justify-content items-center">
-                            <Image src={Sucroalcooleiro} className="w-2/3 lg:w-1/2 mx-auto mb-4 aspect-square object-cover rounded-full" alt="" />
+                            <Image src={Sucroalcooleiro} className="w-1/2 mx-auto mb-4 aspect-square object-cover rounded-full" alt="" />
                         </div>
                         <div className="lg:w-3/6 text-zinc-600  ">
-                            <div className="text-base text-justify md:text-left md:text-2xl text-zinc-700 font-reading">
+                            <div className="text-base text-justify md:text-left md:text-xl lg:text-base 2xl:text-xl text-zinc-700 font-reading">
 
                                 <p className="mb-4">
                                     Somos especialistas em soluções para o setor sucroalcooleiro e sucroenergético, oferecendo equipamentos e sistemas de alta confiabilidade voltados à segurança, controle e eficiência operacional. Nosso portfólio atende às principais demandas de processamento de cana-de-açúcar, produção de etanol e geração de energia renovável, garantindo conformidade regulatória, desempenho contínuo e sustentabilidade ambiental.
