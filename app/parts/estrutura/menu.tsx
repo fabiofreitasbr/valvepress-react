@@ -91,20 +91,23 @@ export default function Menu() {
                                         Início
                                     </Link>
                                 </li>
-                                <li className="px-3 lg:px-0 text-center ">
+                                <li className="">
                                     <Link
+                                        onClick={menuBurger}
                                         href="/quem-somos"
-                                        className={
-                                            "text-white hover:text-orange-500" +
-                                            (namePath == "/quem-somos"
-                                                ? " border-b-2 py-4 border-orange-500"
-                                                : "")
-                                        }
+                                        className="text-white hover:text-orange-500 transition-all flex flex-wrap justify-center"
                                     >
-                                        {" "}
-                                        Quem Somos
+                                        <span
+                                            className={
+                                                namePath === "/quem-somos"
+                                                    ? "border-b-2 py-2 border-orange-500 text-center"
+                                                    : "" 
+                                            }
+                                        > Quem Somos
+                                        </span>
                                     </Link>
                                 </li>
+
                                 <li className="relative px-3 lg:px-0  text-center " onMouseEnter={handleEnterProduct}
 
 
