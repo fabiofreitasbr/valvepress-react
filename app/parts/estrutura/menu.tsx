@@ -25,21 +25,22 @@ export default function Menu() {
         const currentNavigation = menuActive == "" ? "right-0" : "-right-full";
         setMenuActive(currentActive);
         setMenuNavigation(currentNavigation);
-         if (currentActive === "is-active") {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
+        if (currentActive === "is-active") {
+            document.body.classList.add("overflow-hidden");
+        } else {
+            document.body.classList.remove("overflow-hidden");
+        }
     };
-
-    const handleMouseEnterProduct = () => {
+    const handleEnterProduct = () => {
         setMenuProduct(true);
+        setMenuSegment(false); // fecha o dropdown de segmentos
     };
 
-
-    const handleMouseEnterSegment = () => {
+    const handleEnterSegment = () => {
         setMenuSegment(true);
+        setMenuProduct(false); // fecha o dropdown de produtos
     };
+
 
     const [isOpen, setIsOpen] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
@@ -57,7 +58,7 @@ export default function Menu() {
                 }
             >
                 <div className="container mx-auto px-4 h-full relative">
-                    <div className="flex justify-between items-center h-full gap-2 md:gap-0">
+                    <div className="flex justify-between items-center h-full gap-2 md:gap-4">
                         <div className="flex items-center ">
                             <Link href="/">
                                 <Image
@@ -108,11 +109,17 @@ export default function Menu() {
                                         Quem Somos
                                     </Link>
                                 </li>
-                                <li className="relative px-3 lg:px-0  text-center " onMouseEnter={handleMouseEnterProduct}
+                                <li className="relative px-3 lg:px-0  text-center " onMouseEnter={handleEnterProduct}
+                                   
+
                                 >
                                     <div className="flex flex-wrap items-center relative gap-1 " >
                                         <Link
                                             href=""
+                                            onClick={() => {
+                                                setIsOpen(!isOpen);
+                                                setIsOpen2(false); // fecha o outro menu
+                                            }}
                                             className=
                                             "text-white hover:text-orange-500 "
 
@@ -190,11 +197,10 @@ export default function Menu() {
                                         </div>
                                     )}
                                 </li>
-                                <li className="relative px-3 lg:px-0  text-center text-white" onMouseEnter={handleMouseEnterSegment}
-                                >
+                                <li className="relative px-3 lg:px-0  text-center text-white"  >
                                     <ul>
                                         <Link href=""
-
+                                            onMouseEnter={handleEnterSegment}
                                             className="text-white hover:text-orange-500 "
 
                                         >
@@ -397,8 +403,11 @@ export default function Menu() {
                         </li>
                         <li>
                             <Link
-                                href={"#"}
-                                onClick={() => setIsOpen(!isOpen)}
+                                href={""}
+                                onClick={() => {
+                                    setIsOpen(!isOpen);
+                                    setIsOpen2(false); // fecha o outro menu
+                                }}
                                 className={
                                     "" +
                                     (namePath == "/categoria"
@@ -484,7 +493,10 @@ export default function Menu() {
                         <li>
                             <Link
                                 href={"#"}
-                                onClick={() => setIsOpen2(!isOpen2)}
+                                onClick={() => {
+                                    setIsOpen2(!isOpen2);
+                                    setIsOpen(false); // fecha o primeiro menu
+                                }}
                                 className={
                                     "" +
                                     (namePath == "/categoria"
