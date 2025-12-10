@@ -101,7 +101,7 @@ export default function Menu() {
                                             className={
                                                 namePath === "/quem-somos"
                                                     ? "border-b-2 border-orange-500 py-2 "
-                                                    : "" 
+                                                    : ""
                                             }
                                         > Quem Somos
                                         </span>
@@ -379,7 +379,7 @@ export default function Menu() {
                                 href="/"
                                 className={
                                     "text-white hover:text-orange-500 transition-all " +
-                                    (namePath == "/" ? " border-b-2 py-2 border-orange-500" : "")
+                                    (namePath == "/" ? " border-b-2 py-1 border-orange-500" : "")
                                 }
                             >
                                 {" "}
@@ -393,7 +393,7 @@ export default function Menu() {
                                 className={
                                     "text-white hover:text-orange-500 transition-all " +
                                     (namePath == "/quem-somos"
-                                        ? " border-b-2 py-2 border-orange-500"
+                                        ? " border-b-2 py-1 border-orange-500"
                                         : "")
                                 }
                             >
@@ -424,7 +424,11 @@ export default function Menu() {
                                     <ul className="py-2">
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/tipos/equipamentos-de-seguranca"
                                                 className="block px-4 py-2 text-white hover:text-orange-500 text-xs font-medium"
                                             >
@@ -433,7 +437,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/tipos/filtros-para-tubulacoes"
                                                 className="block px-4 py-2 text-white hover:text-orange-500 text-xs font-medium"
                                             >
@@ -442,7 +450,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/tipos/purgadores-para-vapor-e-ar-comprimido"
                                                 className="block px-4 py-2 text-white hover:text-orange-500 text-xs font-medium"
                                             >
@@ -451,7 +463,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/tipos/valvulas-de-controle"
                                                 className="block px-4 py-2 text-white hover:text-orange-500 text-xs font-medium"
                                             >
@@ -460,7 +476,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/tipos/valvulas-de-descarga-continua-e-periodica"
                                                 className="block px-4 py-2 text-white hover:text-orange-500 text-xs font-medium"
                                             >
@@ -469,7 +489,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/tipos/valvulas-de-seguranca-e-alivio"
                                                 className="block px-4 py-2 text-white hover:text-orange-500 text-xs font-medium"
                                             >
@@ -478,7 +502,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/tipos/visores-de-fluxo"
                                                 className="block px-4 py-2 text-white hover:text-orange-500 text-xs font-medium"
                                             >
@@ -513,7 +541,11 @@ export default function Menu() {
                                     <ul className="py-2">
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/segmentos/biocombustiveis"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
@@ -527,7 +559,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/segmentos/sucroalcooleiro"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
@@ -540,7 +576,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/segmentos/terminais"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
@@ -552,7 +592,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/segmentos/refinarias"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
@@ -564,7 +608,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/segmentos/distribuidoras"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
@@ -578,7 +626,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/segmentos/industria"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
@@ -590,7 +642,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/segmentos/alimentos"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
@@ -602,7 +658,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/segmentos/saneamento"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
@@ -616,7 +676,11 @@ export default function Menu() {
                                         </li>
                                         <li>
                                             <Link
-                                                onClick={menuBurger}
+                                                onClick={() => {
+                                                    menuBurger();
+                                                    setIsOpen(false);
+                                                    setIsOpen2(false);
+                                                }}
                                                 href="/segmentos/embarcacoes"
                                                 className="block px-4 py-2 text-white text-xs font-medium"
                                             >
@@ -638,7 +702,7 @@ export default function Menu() {
                                 className={
                                     "text-white hover:text-orange-500 transition-all " +
                                     (namePath == "/contato"
-                                        ? " border-b-2 py-2 border-orange-500"
+                                        ? " border-b-2 py-1 border-orange-500"
                                         : "")
                                 }
                             >
