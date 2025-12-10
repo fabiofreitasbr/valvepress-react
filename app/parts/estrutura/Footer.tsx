@@ -14,13 +14,13 @@ export default function Rodape() {
             <footer className="bg-blue-900  py-2 md:py-8 overflow-hidden">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0  lg:gap-8  ">
-                        <a href="/" className="md:col-span-3 lg:col-span-1">
+                        <Link href="/" className="md:col-span-3 lg:col-span-1">
                             <Image
                                 src={Logo}
                                 alt="logo"
                                 className="mx-auto my-4 ls-is-cached lazyloaded"
                             />
-                        </a>
+                        </Link>
                         <div className="my-4 md:my-0 flex flex-col items-center text-center md:text-left md:block ">
                             <h3 className=" text-white py-3 text-2xl">Menu</h3>
                             <hr className="w-6 mb-4 border border-solid border-orange-500" />

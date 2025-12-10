@@ -1,7 +1,7 @@
 import HeaderTitle from "@/app/parts/estrutura/headerTitle";
 import Image from "next/image";
 import React from "react";
-import Graneis from "@/public/img/graneis-liquidos.png";
+import Alimentos from "@/public/img/alimentos.jpg";
 import NossosProdutos from "@/app/parts/Home/NossosProdutos";
 import ContatoForm from "@/app/parts/Componentes/ContatoFormPage";
 import Parceiros from "@/app/parts/Home/Parceiros";
@@ -14,10 +14,10 @@ const Terminais = () => {
                 <div className="container mx-auto px-4 ">
                     <div className="block lg:flex lg:flex-row-reverse  ">
                         <div className="lg:w-3/6 flex justify-content items-center">
-                            <Image src={Graneis} className="w-2/3 lg:w-1/2 mx-auto mb-4" alt="" />
+                            <Image src={Alimentos} className="w-1/2  mx-auto mb-4 lg:mb-20 aspect-square object-cover rounded-full" alt="" />
                         </div>
                         <div className="lg:w-3/6 text-zinc-600  ">
-                            <div className="text-base text-justify md:text-left md:text-2xl text-zinc-700 font-reading">
+                            <div className="text-base text-justify md:text-left md:text-xl lg:text-base 2xl:text-xl text-zinc-700 font-reading">
 
                                 <p className="mb-4">
                                     Somos especialistas em soluções para o segmento de terminais, oferecendo equipamentos e sistemas de alta confiabilidade voltados à proteção, controle e eficiência operacional. Nosso portfólio atende às principais demandas de armazenamento e movimentação de líquidos e gases, garantindo segurança e desempenho contínuo.

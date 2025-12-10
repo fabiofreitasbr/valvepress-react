@@ -1,7 +1,7 @@
 import HeaderTitle from "@/app/parts/estrutura/headerTitle";
 import Image from "next/image";
 import React from "react";
-import Graneis from "@/public/img/graneis-liquidos.png";
+import Biocombustiveis from "@/public/img/biocombustiveis.jpg";
 import NossosProdutos from "@/app/parts/Home/NossosProdutos";
 import ContatoForm from "@/app/parts/Componentes/ContatoFormPage";
 import Parceiros from "@/app/parts/Home/Parceiros";
@@ -14,10 +14,10 @@ const Terminais = () => {
                 <div className="container mx-auto px-4 ">
                     <div className="block lg:flex lg:flex-row-reverse  ">
                         <div className="lg:w-3/6 flex justify-content items-center">
-                            <Image src={Graneis} className="w-1/2 lg:w-2/3 mx-auto mb-4" alt="" />
+                            <Image src={Biocombustiveis} className="w-1/2 mx-auto mb-4 aspect-square object-cover rounded-full" alt="" />
                         </div>
                         <div className="lg:w-3/6 text-zinc-600  ">
-                            <div className="text-base text-justify md:text-left  md:text-xl lg:text-base 2xl:text-2xl text-zinc-700 font-reading">
+                            <div className="text-base text-justify md:text-left  md:text-xl lg:text-base 2xl:text-xl text-zinc-700 font-reading">
 
                                 <p className="mb-4">
                                     Somos especialistas em soluções para o setor de refino, oferecendo tecnologias e equipamentos voltados à produção, controle e eficiência na operação de biocombustíveis. Nosso portfólio atende às principais exigências de processamento de matérias-primas renováveis, garantindo segurança, desempenho e conformidade ambiental.
@@ -35,7 +35,7 @@ const Terminais = () => {
                     </div>
                 </div>
             </section>
-            <NossosProdutos cor="bg-blue-900" titulo="Produtos" corTitulo="text-white" corBotao="bg-white text-blue-900"/>
+            <NossosProdutos cor="bg-blue-900" titulo="Produtos" corTitulo="text-white" corBotao="bg-white text-blue-900" />
             <></>
             <section className="py-10 md:py-16">
                 <div className="container mx-auto px-4 ">
