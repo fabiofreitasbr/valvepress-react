@@ -22,8 +22,8 @@ export default function Rodape() {
                             />
                         </Link>
                         <div className="my-4 md:my-0 flex flex-col items-center justify-center md:items-start sm:text-start    md:text-left  text-white mx-auto">
-                            <h3 className=" text-white py-3 text-2xl">Menu</h3>
-                            <hr className="w-6 mb-4 border border-solid border-orange-500" />
+                            <h3 className=" text-white py-3 text-2xl mr-0 sm:mr-10 md:mr-0">Menu</h3>
+                            <div className="mr-0 sm:mr-20 md:mr-0"><hr className="w-6 mb-4 border border-solid border-orange-500" /></div>
 
                             <ul className="flex flex-col text-center sm:text-start text-base font-light 2xl:text-lg">
                                 <li className="py-1">
@@ -90,7 +90,7 @@ export default function Rodape() {
                         </div>
                         <div className="sm:col-span-2 md:col-span-1 my-4 md:my-0 flex flex-col items-center text-center md:text-left md:block text-white ">
                             <h3 className=" py-3 text-2xl">Redes sociais</h3>
-                            <hr className="w-6 mb-4 border border-solid border-orange-500" />
+                            <hr className="w-6 mb-4 border border-solid border-orange-500 " />
                             <div>
                                 <RedesSociais
                                     cor="text-white py-2"
