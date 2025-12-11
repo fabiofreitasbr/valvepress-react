@@ -95,7 +95,7 @@ export default function Menu() {
                                     <Link
                                         onClick={menuBurger}
                                         href="/quem-somos"
-                                        className="text-white hover:text-orange-500 transition-all flex flex-wrap justify-center"
+                                        className="text-white text-center hover:text-orange-500 transition-all  place-items-center"
                                     >
                                         <span
                                             className={

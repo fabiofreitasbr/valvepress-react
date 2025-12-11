@@ -62,8 +62,8 @@ export default function Rodape() {
                                 href={ContentLinks.email}
                                 className="hover:text-orange-500 transition "
                             >
-                                <div className="flex gap-2 items-center sm:text-start  text-base font-light 2xl:text-lg py-1 md:max-w-[210px] xl:max-w-[400px]">
-                                    <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
+                                <div className="flex gap-2  items-center md:items-start xl:items-center sm:text-start  text-base font-light 2xl:text-lg py-1 md:max-w-[210px] xl:max-w-[400px]">
+                                    <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5 md:mt-1.5 xl:mt-0" />
                                     {ContentLinks.emailShow}
                                 </div>
                             </a>
