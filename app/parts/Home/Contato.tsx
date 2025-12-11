@@ -11,14 +11,14 @@ export default function Contato() {
       <section id="contato" className="py-8 md:py-16">
         <div className="container mx-auto mb-2 md:mb-6 px-4">
           <div className="text-center">
-            <h2 className="text-orange-500 uppercase font-medium text-xl md:text-3xl my-2">
+            <h2 className="text-orange-500 uppercase font-medium text-xl md:text-2xl xl:text-3xl my-2">
               Entre em contato
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 ">
             <div className="text-sm md:text-xl text-white rounded-xl">
-              <div className="text-md md:text-lg p-2 md:p-6 my-3 md:mt-0">
-                <div className="text-lg md:text-xl text-center md:text-left pb-2">
+              <div className="text-md md:text-lg lg:text- p-2 md:p-6 my-3 md:mt-0">
+                <div className="text-lg md:text-lg text-center md:text-left pb-2">
                   <h3 className="font-bold text-xl text-blue-900 py-2 uppercase">
                     Quer fazer um orçamento?
                   </h3>

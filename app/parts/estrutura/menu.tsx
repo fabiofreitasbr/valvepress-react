@@ -54,7 +54,7 @@ export default function Menu() {
                 }
             >
                 <div className="container mx-auto px-4 h-full relative">
-                    <div className="flex justify-between items-center h-full gap-2 md:gap-4">
+                    <div className="flex justify-between items-center h-full gap-2 md:gap-4 lg:gap-10">
                         <div className="flex items-center ">
                             <Link href="/">
                                 <Image
@@ -76,7 +76,7 @@ export default function Menu() {
                             />
                         </div>
                         <nav className="items-center flex  ">
-                            <ul className="hidden md:flex items-center text-xs lg:text-sm xl:text-base  2xl:gap-8 uppercase font-normal lg:gap-4">
+                            <ul className="hidden md:flex items-center text-xs  xl:text-base  2xl:gap-8 uppercase font-normal lg:gap-4">
                                 <li className="px-3 lg:px-0">
                                     <Link
                                         href="/"
@@ -91,20 +91,21 @@ export default function Menu() {
                                         Início
                                     </Link>
                                 </li>
-                                <li className="">
+                                <li className="text-center px-3 lg:px-0">
                                     <Link
                                         onClick={menuBurger}
                                         href="/quem-somos"
                                         className="text-white text-center hover:text-orange-500 transition-all  place-items-center"
                                     >
-                                        <span
+                                        <div
                                             className={
                                                 namePath === "/quem-somos"
                                                     ? "border-b-2 border-orange-500 py-2 "
                                                     : ""
                                             }
-                                        > Quem Somos
-                                        </span>
+                                        > 
+                                        </div>
+                                        Quem Somos
                                     </Link>
                                 </li>
 
@@ -123,7 +124,7 @@ export default function Menu() {
                                             "text-white hover:text-orange-500 flex items-center gap-2"
 
                                         >
-                                            <span>Linhas de Produtos</span>
+                                            <div className="w-auto lg:w-18 xl:w-auto">Linhas de Produtos</div>
                                             <FontAwesomeIcon
                                                 className="md:w-3 md:h-3 xl:w-4 xl:h-4"
                                                 icon={faChevronDown}
@@ -203,7 +204,7 @@ export default function Menu() {
                                             className="text-white hover:text-orange-500 flex items-center gap-2"
 
                                         >
-                                            <span>Segmentos atendidos</span>
+                                            <div className="w-auto lg:w-18 xl:w-auto">Segmentos atendidos</div>
                                             <FontAwesomeIcon
                                                 className="md:w-3 md:h-3 xl:w-4 xl:h-4"
                                                 icon={faChevronDown}
