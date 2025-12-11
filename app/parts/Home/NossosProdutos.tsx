@@ -19,7 +19,7 @@ export default function NossosProdutos({ cor, titulo, corTitulo, corBotao }: Pro
         <section id="produtos" className={`${bgColor} "py-10`} >
             <div className="container mx-auto py-2 px-4   ">
                 <div className="my-4 text-center">
-                    <h2 className={` ${textColor} text-orange-500 uppercase font-medium text-xl md:text-3xl pt-4`}>
+                    <h2 className={` ${textColor} text-orange-500 uppercase font-medium  text-xl md:text-2xl xl:text-3xl pt-4`}>
                         {Title}
                     </h2>
                 </div>

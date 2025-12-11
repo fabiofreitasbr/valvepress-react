@@ -17,7 +17,7 @@ export default function Parceiros({cor, titulo} : PropsBg) {
             <div className="container mx-auto px-4 ">
                 <div className="mb-6 ">
                     <div className="text-center">
-                        <h2 className="text-blue-900 uppercase font-medium text-xl md:text-3xl my-2">
+                        <h2 className="text-blue-900 uppercase font-medium  text-xl md:text-2xl xl:text-3xl my-2">
                             {Title}
                         </h2>
                     </div>
