@@ -18,7 +18,7 @@
     "@splidejs/splide": "^4.1.4",
     "@splidejs/splide-extension-intersection": "^0.2.0",
     "axios": "^1.13.2",
-    "next": "^16.0.8",
+    "next": "16.0.10",
     "node": "^20.19.6",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
