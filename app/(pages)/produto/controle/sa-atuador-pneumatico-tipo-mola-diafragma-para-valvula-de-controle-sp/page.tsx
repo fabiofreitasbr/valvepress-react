@@ -13,7 +13,7 @@ const contentModelo = {
     produtos: [
         {
             title: "SA – ATUADOR PNEUMÁTICO TIPO MOLA-DIAFRAGMA PARA VÁLVULA DE CONTROLE SP",
-            text: "Atuador pneumático tipo mola-diafragma para válvula de controle SP. Para acionamento de elementos finais de controle, Destinados a operar principalmente em conjunto com válvulas de controle ASCA série SP.",
+            text: "Atuador pneumático tipo mola-diafragma para válvula de controle SP. Para acionamento de elementos finais de controle, Destinados a operar principalmente em conjunto com válvulas de controle ValvePress série SP.",
             img: Sa,
         },
     ],
