@@ -1,4 +1,4 @@
-import Crcc from "@/public/img/parceiros/crcc.png";
+import CrcPetrobras from "@/public/img/parceiros/crc-petrobras.png";
 import Onip from "@/public/img/parceiros/onip.png";
 import CadFor from "@/public/img/parceiros/cadfor.png";
 import Ansys from "@/public/img/parceiros/ansys.png";
@@ -9,7 +9,7 @@ import Nbr from "@/public/img/parceiros/nbr.png";
 import Nbr28300 from "@/public/img/parceiros/nbr28300.png";
 
 export const ContentParceiros = [
-    { slug: "Crcc", img: Crcc, },
+    { slug: "CrcPetrobras", img: CrcPetrobras, },
     { slug: "Onip", img: Onip, },
     { slug: "CadFor", img: CadFor, },
     { slug: "Ansys", img: Ansys, },

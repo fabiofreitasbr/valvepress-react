@@ -26,7 +26,7 @@ export default function Parceiros({cor, titulo} : PropsBg) {
                     {ContentParceiros.map((serviceSingle) => (
                         <div
                             key={serviceSingle.slug}
-                            className="bg-white h-30  sm:h-40 lg:h-30 2xl:h-50 sm:w-auto md:w-60 lg:w-1/8  p-4 rounded-xl flex justify-center items-center"
+                            className="bg-white h-30  sm:h-40  2xl:h-50 sm:w-auto md:w-60 lg:w-1/8  p-4 rounded-xl flex justify-center items-center"
                         >
                             <div className="w-18 sm:w-24 lg:w-full  lg:h-auto">
 
