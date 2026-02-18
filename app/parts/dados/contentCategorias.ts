@@ -14,6 +14,20 @@ export const ContentCategorias = [
     img: Equipamentos,
     href: "/tipos/equipamentos-de-seguranca",
   },
+   {
+    text: "Válvulas de Segurança de Alívio",
+    qtd: "14 itens",
+    slug: "Alívio",
+    img: Alívio,
+    href: "/tipos/valvulas-de-seguranca-e-alivio",
+  },
+  {
+    text: "Válvulas de Controle",
+    qtd: "16 itens",
+    slug: "Controle",
+    img: Controle,
+    href: "/tipos/valvulas-de-controle",
+  },
   {
     text: "Filtros para Tubulações",
     qtd: "10 itens",
@@ -30,27 +44,13 @@ export const ContentCategorias = [
   },
 
   {
-    text: "Válvulas de Controle",
-    qtd: "16 itens",
-    slug: "Controle",
-    img: Controle,
-    href: "/tipos/valvulas-de-controle",
-  },
-
-  {
     text: "Válvulas de Descarga Contínua e Periódica",
     qtd: "9 itens",
     slug: "Periódica",
     img: Periódica,
     href: "/tipos/valvulas-de-descarga-continua-e-periodica",
   },
-  {
-    text: "Válvulas de Segurança de Alívio",
-    qtd: "14 itens",
-    slug: "Alívio",
-    img: Alívio,
-    href: "/tipos/valvulas-de-seguranca-e-alivio",
-  },
+ 
   {
     text: "Visores de Fluxo",
     qtd: "6 itens",
