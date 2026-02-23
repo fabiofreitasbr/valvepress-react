@@ -8,16 +8,16 @@ import Visores from "@/public/img/categorias/visores-de-fluxo.png";
 
 export const ContentCategorias = [
     {
-    text: "Equipamentos de Segurança",
+    text: "Válvulas de Alívio, Pressão e Vácuo",
     qtd: "46 itens",
-    slug: "Segurança",
+    slug: "VálvulaAlívio",
     img: Equipamentos,
     href: "/tipos/equipamentos-de-seguranca",
   },
    {
-    text: "Válvulas de Segurança de Alívio",
+    text: "Válvulas de Segurança",
     qtd: "14 itens",
-    slug: "Alívio",
+    slug: "Segurança",
     img: Alívio,
     href: "/tipos/valvulas-de-seguranca-e-alivio",
   },
