@@ -10,7 +10,7 @@ export const ContentCategorias = [
     {
     text: "Válvulas de Alívio, Pressão e Vácuo",
     qtd: "46 itens",
-    slug: "VálvulaAlívio",
+    slug: "Alívio",
     img: Equipamentos,
     href: "/tipos/equipamentos-de-seguranca",
   },
