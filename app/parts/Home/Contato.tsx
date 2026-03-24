@@ -47,7 +47,7 @@ export default function Contato() {
                     </button>
                   </Link>
                   <Link
-                    href="/landingPage"
+                    href="/valvulas-industriais"
                     className="w-full block"
                     target="_blank"
                   >

@@ -11,7 +11,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
 
   // rotas onde  NÃO quer mostrar menu/footer
 
-  const hideLayoutRoutes = ['/landingPage']; // ajuste conforme  rota 
+  const hideLayoutRoutes = ['/valvulas-industriais']; // ajuste conforme  rota 
   const shouldHideLayout = hideLayoutRoutes.includes(pathname);
 
   return (
