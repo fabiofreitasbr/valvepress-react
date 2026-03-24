@@ -307,6 +307,9 @@ export default function LandingPage() {
               <h3 className="text-center md:text-left text-lg md:text-2xl xl:text-3xl text-blue-900 uppercase font-bold my-4">
                 A VALVEPRESS
               </h3>
+              <h3 className="text-center md:text-left text-sm md:text-base xl:text-xl text-orange-500 uppercase font-bold my-4">
+                QUEM SOMOS
+              </h3>
               <p className="text-center md:text-left text-base md:text-lg xl:text-xl my-4 font-open font-medium">
                 Somos uma empresa contemporânea que já nasceu com o know-how de
                 mais de 50 anos no ramo industrial. Investimos no aprimoramento
