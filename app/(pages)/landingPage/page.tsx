@@ -120,7 +120,7 @@ export default function LandingPage() {
         corTitulo="text-white my-2"
         corBotao="bg-white text-blue-900"
       />
-      <div id="segmentos" className="bg-white py-10">
+      <div id="segmentos" className="bg-white py-20">
         <div className="container mx-auto px-4">
           <div className="w-auto flex gap-8 ">
             <div className=" order-2">
@@ -192,7 +192,7 @@ export default function LandingPage() {
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-10 h-10 pr-2 text-blue-900"
+                          className="w-12 h-12 pr-2 text-blue-900"
                           icon={faGasPump}
                         />{" "}
                         Distribuidoras e Transportadoras de Combustíveis
@@ -250,7 +250,7 @@ export default function LandingPage() {
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-10 h-10 pr-2 text-blue-900"
+                          className="w-12 h-12 pr-2 text-blue-900"
                           icon={faShip}
                         />{" "}
                         Embarcações e Tanques Flutuantes
@@ -260,21 +260,20 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-
             <div className="w-3/4 h-full flex flex-col gap-4 ">
               <div className="flex gap-4">
                 <Image
                   src={"/seg-1.jpeg"}
-                  className="w-full rounded-xl"
+                  className="w-full h-60 rounded-xl"
                   alt=""
-                  width={100}
+                  width={200}
                   height={400}
                 />
                 <Image
                   src={"/seg-2.jpeg"}
                   className="w-full rounded-xl"
                   alt=""
-                  width={100}
+                  width={200}
                   height={400}
                 />
               </div>
@@ -283,7 +282,7 @@ export default function LandingPage() {
                   src={"/seg-3.png"}
                   className="w-full h-full rounded-xl"
                   alt=""
-                  width={300}
+                  width={500}
                   height={400}
                 />
               </div>
