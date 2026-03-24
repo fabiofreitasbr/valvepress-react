@@ -313,15 +313,19 @@ export default function LandingPage() {
                 Somos uma empresa contemporânea que já nasceu com o know-how de
                 mais de 50 anos no ramo industrial. Investimos no aprimoramento
                 de nossos colaboradores e enxergamos os desafios como grandes
-                oportunidades de crescimento.
+                oportunidades de crescimento. Atuamos Como Fabricante De
+                Equipamentos Industriais, Tais Como:<span className="font-bold"> VÁLVULA DE ALÍVIO DE
+                PRESSÃO E VÁCUO COM CORTA-CHAMAS, VÁLVULA DE SEGURANÇA, VÁLVULA
+                DE CONTROLE, PROTETORES DE TUBULAÇÃO, RESPIROS DE EMERGÊNCIA,
+                CABEÇA DE SUSPIRO PARA TANQUES E EMBARCAÇÕES.</span>
               </p>
               <p className="text-center md:text-left text-base md:text-lg xl:text-xl my-4 font-open font-medium">
-                Atuamos como distribuidora exclusiva dos principais produtos
-                industriais, como Purgadores de Vapor e Ar-comprimido, Válvulas
-                de Controle e Instrumentação, Válvulas de Retenção, Válvulas de
-                Descarga, Válvulas de Segurança, Válvulas de Alívio e Pressão
-                com Corta-chamas, Visores de Fluxo, Separadores Centrífugos e
-                Filtros, etc.
+                Dispomos de uma vasta linha de produtos, onde primamos pela
+                qualidade total em nossos processos de fabricação. Nossos
+                equipamentos são notadamente reconhecidos pelos nossos clientes
+                (usuários), como referência no tocante à qualidade/durabilidade,
+                e eficiência operacional. <span className="font-bold">Certificações: ( ISO 9001:2015 | NBR
+                16852 | NBR 28300 ).</span> 
               </p>
             </div>
           </div>
