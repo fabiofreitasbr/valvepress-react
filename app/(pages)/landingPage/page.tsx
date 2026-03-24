@@ -127,7 +127,7 @@ export default function LandingPage() {
                 <h2 className="text-blue-900 uppercase font-medium text-sm  md:text-2xl xl:text-3xl my-2">
                   Segmentos Atentidos
                 </h2>
-              <div className=" bg-white grid grid-cols-2 gap-2 text-start">
+              <div className=" bg-white grid grid-cols-2 gap-6 text-start">
                 <div className="py-2">
                   <div>
                     <Link
@@ -260,11 +260,11 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            <div className="w-3/4 h-full flex flex-col gap-4 ">
-              <div className="flex gap-4">
+            <div className="w-3/4 h-full flex flex-col gap-6 ">
+              <div className="flex gap-6">
                 <Image
                   src={"/seg-1.jpeg"}
-                  className="w-full h-60 rounded-xl"
+                  className="w-full rounded-xl"
                   alt=""
                   width={200}
                   height={400}
