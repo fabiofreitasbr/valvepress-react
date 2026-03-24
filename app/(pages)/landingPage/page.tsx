@@ -36,7 +36,7 @@ export default function LandingPage() {
             <div className="flex items-center">
               <a href={ContentLinks.phone} target="_blank">
                 <button className="flex justify-center items-center  bg-orange-500 py-2 px-2 md:px-4 mx-4 rounded-full text-lg text-white font-brandon">
-                  <FontAwesomeIcon icon={faPhone} className=" mx-2" />
+                  <FontAwesomeIcon icon={faPhone} className="h-3 md:h-6 mx-2" />
                   <span className="hidden lg:block">
                     {ContentLinks.phoneShow}
                   </span>
@@ -45,7 +45,7 @@ export default function LandingPage() {
 
               <a href={ContentLinks.whatsapp} target="_blank">
                 <button className="flex justify-center items-center  bg-orange-500 py-2 px-2 md:px-4 mx-4 rounded-full text-lg text-white font-brandon">
-                  <FontAwesomeIcon icon={faWhatsapp} className=" mx-2" />
+                  <FontAwesomeIcon icon={faWhatsapp} className="h-3 md:h-6 mx-2" />
                   <span className="hidden lg:block">
                     {ContentLinks.phoneShow}
                   </span>
@@ -122,13 +122,11 @@ export default function LandingPage() {
       />
       <div id="segmentos" className="bg-white py-10">
         <div className="container mx-auto px-4">
-          <div className="w-auto flex gap-8 items-center">
+          <div className="w-auto flex gap-8 ">
             <div className=" order-2">
-              <div className="">
                 <h2 className="text-blue-900 uppercase font-medium text-sm  md:text-2xl xl:text-3xl my-2">
                   Segmentos Atentidos
                 </h2>
-              </div>
               <div className=" bg-white grid grid-cols-2 gap-2 text-start">
                 <div className="py-2">
                   <div>
@@ -263,7 +261,7 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div className="w-3/4 flex flex-col gap-4 py-20 ">
+            <div className="w-3/4 h-full flex flex-col gap-4 ">
               <div className="flex gap-4">
                 <Image
                   src={"/seg-1.jpeg"}
@@ -283,7 +281,7 @@ export default function LandingPage() {
               <div>
                 <Image
                   src={"/seg-3.png"}
-                  className="w-full rounded-xl"
+                  className="w-full h-full rounded-xl"
                   alt=""
                   width={300}
                   height={400}
