@@ -89,6 +89,13 @@ export default function NossosProdutos({ cor, titulo, corTitulo, corBotao }: Pro
             Entrar em contato
           </button>
         </a>
+        <a href="/landingPage">
+          <button
+            className={`${colorButton} transition-all hover:opacity-90 flex items-center font-medium rounded-full my-6 py-2 px-8 md:px-10 mx-auto text-base sm:text-lg uppercase shadow-md`}
+          >
+            LandigPage
+          </button>
+        </a>
       </div>
     </section>
   );
