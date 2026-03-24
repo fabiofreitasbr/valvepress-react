@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { ContentParceiros } from "../dados/contentParceiros";
+import { ContentCertificacoes } from "../dados/contentCertificacoess";
 
 interface PropsBg {
     cor: string;
      titulo: string;
 }
 
-export default function Parceiros({cor, titulo} : PropsBg) {
+export default function Certificacoes({cor, titulo} : PropsBg) {
     const bgColor = cor;
     const Title = titulo;
 
@@ -23,7 +23,7 @@ export default function Parceiros({cor, titulo} : PropsBg) {
                     </div>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:flex  justify-center gap-4 xl:gap-8">
-                    {ContentParceiros.map((serviceSingle) => (
+                    {ContentCertificacoes.map((serviceSingle) => (
                         <div
                             key={serviceSingle.slug}
                             className="bg-white h-30  sm:h-40  2xl:h-50 sm:w-auto md:w-60 lg:w-1/8  p-4 rounded-xl flex justify-center items-center"

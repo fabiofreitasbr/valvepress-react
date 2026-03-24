@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import ContatoFormHome2 from "@/app/parts/Componentes/ContatoFormPage";
 import Logo from "@/public/img/logo.png";
+import Link from "next/link";
 
 
 export default function LandingPage() {
@@ -17,7 +18,7 @@ export default function LandingPage() {
                 <div className="container mx-auto px-4 text-white h-full">
                     <div className="flex justify-between items-center h-full">
                         <div className="logo">
-                            <a href="/"><Image src={Logo} className="h-[2.5rem] md:h-[3rem] lg:h-[4rem]" alt="" /></a>
+                            <Link href="/"><Image src={Logo} className="h-[2.5rem] md:h-[3rem] lg:h-[4rem]" alt="" /></Link>
                         </div>
                         <div className="flex items-center">
                             <a href={ContentLinks.phone} target="_blank">
@@ -37,7 +38,7 @@ export default function LandingPage() {
                     </div>
                 </div>
             </header>
-        <div className="banner bg-[url('/img/banner-landing.png')] bg-no-repeat bg-cover bg-center min-h-[10rem] sm:min-h-[16rem] md:min-h-[18rem] lg:min-h-[20rem] xl:min-h-[24rem] 2xl:min-h-[26rem] py-8 flex justify-center items-center">
+        <div className="banner bg-[url('/img/banner-landing.png')] bg-no-repeat bg-cover bg-center min-h-40 sm:min-h-64 md:min-h-72 lg:min-h-80 xl:min-h-96 2xl:min-h-104 py-8 flex justify-center items-center">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4">
                     <div className="text-sm md:text-xl text-black rounded-xl flex align-items justify-center h-full flex-col lg:pr-48">
@@ -117,7 +118,7 @@ export default function LandingPage() {
                 </div>
             </div>
         </div>
-        <section id="contato" className="min-h-[35rem] py-4 md:py-10">
+        <section id="contato" className="min-h-140 py-4 md:py-10">
         <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4">
                 <div className="lg:px-10">
@@ -192,7 +193,7 @@ export default function LandingPage() {
                 <div className="container mx-auto px-4">
                     <div className="flex justify-center">
                         <div className="block">
-                            <a href="/">
+                            <Link href="/">
                                 <Image alt="" data-src="/img/logo.png" width={300}
                                     height={200} className="mx-auto my-4 ls-is-cached lazyloaded"
                                     src="/img/logo.png" />
@@ -200,7 +201,7 @@ export default function LandingPage() {
                                     <Image src="/img/logo.png" alt="" width={300}
                                         height={200} />
                                 </noscript>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

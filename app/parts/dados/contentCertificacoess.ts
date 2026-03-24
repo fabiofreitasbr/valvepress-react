@@ -8,7 +8,7 @@ import Iso9001 from "@/public/img/parceiros/iso9001.png";
 import Nbr from "@/public/img/parceiros/nbr.png";
 import Nbr28300 from "@/public/img/parceiros/nbr28300.png";
 
-export const ContentParceiros = [
+export const ContentCertificacoes = [
     { slug: "CrcPetrobras", img: CrcPetrobras, },
     { slug: "Onip", img: Onip, },
     { slug: "CadFor", img: CadFor, },

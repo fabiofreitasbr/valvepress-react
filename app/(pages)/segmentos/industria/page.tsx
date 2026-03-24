@@ -4,7 +4,7 @@ import React from "react";
 import Industria from "@/public/img/industria.jpg";
 import NossosProdutos from "@/app/parts/Home/NossosProdutos";
 import ContatoForm from "@/app/parts/Componentes/ContatoFormPage";
-import Parceiros from "@/app/parts/Home/Parceiros";
+import Parceiros from "@/app/parts/Home/Certificacoes";
 
 const Terminais = () => {
     return (

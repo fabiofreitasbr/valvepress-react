@@ -47,6 +47,17 @@ export default function Contato() {
                     </button>
                   </Link>
                   <Link
+                    href="/landingPage"
+                    className="w-full block"
+                    target="_blank"
+                  >
+                    <button className="flex gap-2 items-center justify-center bg-blue-900 hover:bg-blue-950 font-medium rounded-full py-3 px-2  text-base uppercase transition w-full ">
+                      <FontAwesomeIcon icon={faPhone} className="" />
+                      LANDING{" "}
+                      <span className="hidden xl:block">MESMO!</span>
+                    </button>
+                  </Link>
+                  <Link
                     href={ContentLinks.whatsapp}
                     className="w-full block"
                     target="_blank"
