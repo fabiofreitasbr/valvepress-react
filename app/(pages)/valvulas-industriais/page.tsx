@@ -122,13 +122,13 @@ export default function LandingPage() {
       />
       <div id="segmentos" className="bg-white py-20">
         <div className="container mx-auto px-4">
-          <div className="w-auto flex gap-8 ">
+          <div className="w-auto  gap-4  md:flex md:gap-8 ">
             <div className=" order-2">
                 <h2 className="text-blue-900 uppercase font-medium text-sm  md:text-2xl xl:text-3xl my-2">
                   Segmentos Atentidos
                 </h2>
-              <div className=" bg-white grid grid-cols-2 gap-6 text-start">
-                <div className="py-2">
+              <div className=" bg-white grid md:grid-cols-2 md:gap-6 text-start">
+                <div className="md:py-2">
                   <div>
                     <Link
                       href="/segmentos/biocombustiveis"
@@ -136,7 +136,7 @@ export default function LandingPage() {
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-10 h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
                           icon={faSeedling}
                         />{" "}
                         Biocombustíveis
@@ -150,7 +150,7 @@ export default function LandingPage() {
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-10 h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
                           icon={faIndustry}
                         />{" "}
                         Sucroalcooleiro ou Sucroenergético
@@ -164,7 +164,7 @@ export default function LandingPage() {
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-10 h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
                           icon={faBoxesStacked}
                         />{" "}
                         Terminais
@@ -178,7 +178,7 @@ export default function LandingPage() {
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-10 h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
                           icon={faIndustry}
                         />{" "}
                         Refinarias
@@ -188,11 +188,11 @@ export default function LandingPage() {
                   <div>
                     <Link
                       href="/segmentos/distribuidoras"
-                      className="block py-2 text-orange-500  text-sm md:text-xl font-medium"
+                      className="block pb-2 md:pb-0 md:py-2 text-orange-500  text-sm md:text-xl font-medium"
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-12 h-12 pr-2 text-blue-900"
+                          className="w-6 h-6 md:w-12 md:h-12 pr-2 text-blue-900"
                           icon={faGasPump}
                         />{" "}
                         Distribuidoras e Transportadoras de Combustíveis
@@ -200,15 +200,15 @@ export default function LandingPage() {
                     </Link>
                   </div>
                 </div>
-                <div className="py-2">
+                <div className="md:py-2">
                   <div>
                     <Link
                       href="/segmentos/industria"
-                      className="block py-2 text-orange-500  text-sm md:text-xl font-medium"
+                      className="block pb-2 md:pb-0 md:py-2 text-orange-500  text-sm md:text-xl font-medium"
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-10 h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
                           icon={faFlaskVial}
                         />{" "}
                         Indústria e Química e Petroquímica
@@ -222,7 +222,7 @@ export default function LandingPage() {
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-10 h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
                           icon={faWineGlass}
                         />{" "}
                         Alimentos e Bebidas
@@ -236,7 +236,7 @@ export default function LandingPage() {
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-10 h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
                           icon={faFaucetDrip}
                         />{" "}
                         Saneamento
@@ -250,7 +250,7 @@ export default function LandingPage() {
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-12 h-12 pr-2 text-blue-900"
+                          className="w-6 h-6 md:w-12 md:h-12 pr-2 text-blue-900"
                           icon={faShip}
                         />{" "}
                         Embarcações e Tanques Flutuantes
@@ -260,19 +260,19 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            <div className="w-3/4 h-full flex flex-col gap-6 ">
+            <div className="pt-2 md:w-3/4 h-full flex flex-col gap-3 md:gap-6 ">
               <div className="">
-               <div className="grid grid-cols-2 gap-6">
+               <div className="grid grid-cols-2 gap-3 md:gap-6">
                  <Image
                   src={"/seg-1.jpeg"}
-                  className="rounded-xl object-cover w-full h-48"
+                  className="rounded-xl object-cover w-full md:h-48"
                   alt=""
                   width={200}
                   height={400}
                 />
                 <Image
                   src={"/seg-2.jpeg"}
-                  className="rounded-xl object-cover  w-full h-48"
+                  className="rounded-xl object-cover w-full h-full md:h-48"
                   alt=""
                   width={200}
                   height={400}
@@ -282,7 +282,7 @@ export default function LandingPage() {
               <div>
                 <Image
                   src={"/seg-3.png"}
-                  className="rounded-xl object-cover w-full h-64"
+                  className="rounded-xl object-cover w-full h-full md:h-64"
                   alt=""
                   width={500}
                   height={400}
