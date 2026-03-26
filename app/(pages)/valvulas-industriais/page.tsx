@@ -192,7 +192,7 @@ export default function LandingPage() {
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-6 h-6 md:w-8 md:h-8  xl:w-12 xl:h-12 pr-2 text-blue-900"
+                          className="w-6 h-6 md:w-12 md:h-12 pr-2 text-blue-900"
                           icon={faGasPump}
                         />{" "}
                         Distribuidoras e Transportadoras de Combustíveis
@@ -250,7 +250,7 @@ export default function LandingPage() {
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-6 h-6 md:w-10 md:h-10  xl:w-12 xl:h-12 pr-2 text-blue-900"
+                          className="w-6 h-6 md:w-12 md:h-12 pr-2 text-blue-900"
                           icon={faShip}
                         />{" "}
                         Embarcações e Tanques Flutuantes
