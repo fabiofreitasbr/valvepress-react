@@ -122,21 +122,21 @@ export default function LandingPage() {
       />
       <div id="segmentos" className="bg-white py-10 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="w-auto  gap-4  md:flex md:gap-8 ">
+          <div className="w-auto  gap-4  md:flex md:gap-6 xl:gap-8 ">
             <div className=" order-2">
-                <h2 className="text-blue-900 uppercase font-medium text-sm  md:text-2xl xl:text-3xl my-2">
+                <h2 className="text-blue-900 uppercase font-medium text-sm  md:text-xl xl:text-3xl my-2">
                   Segmentos Atentidos
                 </h2>
-              <div className=" bg-white grid md:grid-cols-2 md:gap-6 text-start">
+              <div className=" bg-white grid md:grid-cols-2 gap-3 xl:gap-6 text-start">
                 <div className="md:py-2">
                   <div>
                     <Link
                       href="/segmentos/biocombustiveis"
-                      className="block py-2 text-orange-500  text-sm md:text-xl font-medium"
+                      className="block py-2 text-orange-500  text-sm md:text-base xl:text-xl font-medium"
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-8 md:h-8 xl:w-10 xl:h-10 pr-2 text-blue-900"
                           icon={faSeedling}
                         />{" "}
                         Biocombustíveis
@@ -146,11 +146,11 @@ export default function LandingPage() {
                   <div>
                     <Link
                       href="/segmentos/sucroalcooleiro"
-                      className="block py-2 text-orange-500  text-sm md:text-xl font-medium"
+                      className="block py-2 text-orange-500  text-sm md:text-base xl:text-xl font-medium"
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-8 md:h-8 xl:w-10 xl:h-10 pr-2 text-blue-900"
                           icon={faIndustry}
                         />{" "}
                         Sucroalcooleiro ou Sucroenergético
@@ -160,11 +160,11 @@ export default function LandingPage() {
                   <div>
                     <Link
                       href="/segmentos/terminais"
-                      className="block py-2 text-orange-500  text-sm md:text-xl font-medium"
+                      className="block py-2 text-orange-500  text-sm md:text-base xl:text-xl font-medium"
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-8 md:h-8 xl:w-10 xl:h-10 pr-2 text-blue-900"
                           icon={faBoxesStacked}
                         />{" "}
                         Terminais
@@ -174,11 +174,11 @@ export default function LandingPage() {
                   <div>
                     <Link
                       href="/segmentos/refinarias"
-                      className="block py-2 text-orange-500  text-sm md:text-xl font-medium"
+                      className="block py-2 text-orange-500  text-sm md:text-base xl:text-xl font-medium"
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-8 md:h-8 xl:w-10 xl:h-10 pr-2 text-blue-900"
                           icon={faIndustry}
                         />{" "}
                         Refinarias
@@ -188,11 +188,11 @@ export default function LandingPage() {
                   <div>
                     <Link
                       href="/segmentos/distribuidoras"
-                      className="block pb-2 md:pb-0 md:py-2 text-orange-500  text-sm md:text-xl font-medium"
+                      className="block pb-2 md:pb-0 md:py-2 text-orange-500  text-sm md:text-base xl:text-xl font-medium"
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-6 h-6 md:w-12 md:h-12 pr-2 text-blue-900"
+                          className="w-6 h-6 md:w-8 md:h-8  xl:w-12 xl:h-12 pr-2 text-blue-900"
                           icon={faGasPump}
                         />{" "}
                         Distribuidoras e Transportadoras de Combustíveis
@@ -204,11 +204,11 @@ export default function LandingPage() {
                   <div>
                     <Link
                       href="/segmentos/industria"
-                      className="block pb-2 md:pb-0 md:py-2 text-orange-500  text-sm md:text-xl font-medium"
+                      className="block pb-2 md:pb-0 md:py-2 text-orange-500  text-sm md:text-base xl:text-xl font-medium"
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-8 md:h-8 xl:w-10 xl:h-10 pr-2 text-blue-900"
                           icon={faFlaskVial}
                         />{" "}
                         Indústria e Química e Petroquímica
@@ -218,11 +218,11 @@ export default function LandingPage() {
                   <div>
                     <Link
                       href="/segmentos/alimentos"
-                      className="block py-2 text-orange-500  text-sm md:text-xl font-medium"
+                      className="block py-2 text-orange-500  text-sm md:text-base xl:text-xl font-medium"
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-8 md:h-8 xl:w-10 xl:h-10 pr-2 text-blue-900"
                           icon={faWineGlass}
                         />{" "}
                         Alimentos e Bebidas
@@ -232,11 +232,11 @@ export default function LandingPage() {
                   <div>
                     <Link
                       href="/segmentos/saneamento"
-                      className="block py-2 text-orange-500  text-sm md:text-xl font-medium"
+                      className="block py-2 text-orange-500  text-sm md:text-base xl:text-xl font-medium"
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-5 h-5 md:w-10 md:h-10 pr-2 text-blue-900"
+                          className="w-5 h-5 md:w-8 md:h-8 xl:w-10 xl:h-10 pr-2 text-blue-900"
                           icon={faFaucetDrip}
                         />{" "}
                         Saneamento
@@ -246,11 +246,11 @@ export default function LandingPage() {
                   <div>
                     <Link
                       href="/segmentos/embarcacoes"
-                      className="block py-2 text-orange-500  text-sm md:text-xl font-medium"
+                      className="block py-2 text-orange-500  text-sm md:text-base xl:text-xl font-medium"
                     >
                       <div className="flex items-center ">
                         <FontAwesomeIcon
-                          className="w-6 h-6 md:w-12 md:h-12 pr-2 text-blue-900"
+                          className="w-6 h-6 md:w-10 md:h-10  xl:w-12 xl:h-12 pr-2 text-blue-900"
                           icon={faShip}
                         />{" "}
                         Embarcações e Tanques Flutuantes
