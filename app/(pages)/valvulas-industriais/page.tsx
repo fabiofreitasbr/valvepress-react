@@ -120,7 +120,7 @@ export default function LandingPage() {
         corTitulo="text-white my-2"
         corBotao="bg-white text-blue-900"
       />
-      <div id="segmentos" className="bg-white py-20">
+      <div id="segmentos" className="bg-white py-10 md:py-20">
         <div className="container mx-auto px-4">
           <div className="w-auto  gap-4  md:flex md:gap-8 ">
             <div className=" order-2">
