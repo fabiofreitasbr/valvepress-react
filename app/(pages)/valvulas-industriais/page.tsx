@@ -260,9 +260,9 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            <div className="pt-2 md:w-3/4 h-full flex flex-col gap-3 md:gap-6 ">
+            <div className="pt-2 md:w-3/4 h-full flex flex-col  gap-3 md:gap-4 xl:gap-6 ">
               <div className="">
-               <div className="grid grid-cols-2 gap-3 md:gap-6">
+               <div className="grid grid-cols-2  gap-3 md:gap-4 xl:gap-6">
                  <Image
                   src={"/seg-1.jpeg"}
                   className="rounded-xl object-cover w-full md:h-48"
