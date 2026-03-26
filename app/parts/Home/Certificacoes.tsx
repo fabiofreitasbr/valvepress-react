@@ -5,19 +5,21 @@ import { ContentCertificacoes } from "../dados/contentCertificacoess";
 
 interface PropsBg {
     cor: string;
-     titulo: string;
+    titulo: string;
+    corTitulo: string;
 }
 
-export default function Certificacoes({cor, titulo} : PropsBg) {
+export default function Certificacoes({cor, titulo, corTitulo} : PropsBg) {
     const bgColor = cor;
     const Title = titulo;
+    const corTitle = corTitulo;
 
     return (
         <div className= {`${bgColor}` + " overflow-x-hidden"} > {/* "py-16  bg-gray-200" */}
             <div className="container mx-auto px-4 ">
                 <div className="mb-6 ">
                     <div className="text-center">
-                        <h2 className="text-blue-900 uppercase font-medium  text-xl md:text-2xl xl:text-3xl my-2">
+                        <h2 className={`${corTitle} uppercase font-medium  text-xl md:text-2xl xl:text-3xl my-2`}>
                             {Title}
                         </h2>
                     </div>

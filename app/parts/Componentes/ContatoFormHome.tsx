@@ -58,18 +58,19 @@ export default function ContatoForm() {
         />
         <input
           {...register("email")}
-          className=" text-base lg:text-lg 2xl:text-xl font-light py-3 md:py-3 lg:py-4 px-4 md:px-4 lg:px-5 rounded-md md:rounded-lg block w-full bg-zinc-200 md:col-span-1"
+          className=" text-base lg:text-lg 2xl:text-xl font-light py-3 md:py-3 lg:py-4 px-4 md:px-4 lg:px-5 rounded-md md:rounded-lg block w-full bg-zinc-200 md:col-span-2 text-black"
           placeholder="E-mail"
         />
         <input
           {...register("telefone")}
-          className=" text-base lg:text-lg 2xl:text-xl font-light py-3 md:py-3 lg:py-4 px-4 md:px-4 lg:px-5 rounded-md md:rounded-lg block w-full bg-zinc-200 md:col-span-1"
+          className=" text-base lg:text-lg 2xl:text-xl font-light py-3 md:py-3 lg:py-4 px-4 md:px-4 lg:px-5 rounded-md md:rounded-lg block w-full bg-zinc-200 md:col-span-2 text-black"
           
           placeholder="Telefone" 
         />
       </div>
-      <button className="my-3 flex place-items-center gap-2 md:gap-4 bg-blue-900 hover:bg-blue-950 transition-all rounded-full text-white text-base lg:text-lg px-4 py-2 md:px-8 lg:px-10 lg:py-2 font-normal uppercase">
-        Enviar mensagem
+      <div className="flex items-center justify-end">
+        <button className="my-3 flex place-items-center gap-2 md:gap-4 bg-orange-500 transition-all rounded-full text-white text-base lg:text-lg px-4 py-2 md:px-8 lg:px-10 lg:py-2 font-normal uppercase">
+        Enviar
       </button>
       {message != "" ? (
         <div id="response-contact" className="w-full">
@@ -86,6 +87,7 @@ export default function ContatoForm() {
       ) : (
         ""
       )}
+      </div>
     </form>
   );
 }
