@@ -7,19 +7,17 @@ import { usePathname } from 'next/navigation';
 
 export default function Template({ children }: { children: React.ReactNode }) {
 
-  const pathname = usePathname();
+    const pathname = usePathname();
 
-  // rotas onde  NÃO quer mostrar menu/footer
+    const hideLayoutRoutes = ['/valvulas-industriais'];
+    const shouldHideLayout = hideLayoutRoutes.includes(pathname);
 
-  const hideLayoutRoutes = ['/valvulas-industriais']; // ajuste conforme  rota 
-  const shouldHideLayout = hideLayoutRoutes.includes(pathname);
-
-  return (
-    <>
-      {!shouldHideLayout && <BarraContato />}
-      {!shouldHideLayout && <Menu />}
-      {children}
-      {!shouldHideLayout && <Footer />}
-    </>
-  );
+    return (
+        <>
+            {!shouldHideLayout && <BarraContato />}
+            {!shouldHideLayout && <Menu />}
+            {children}
+            {!shouldHideLayout && <Footer />}
+        </>
+    );
 }

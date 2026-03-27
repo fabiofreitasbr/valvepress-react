@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { ContentCertificacoes } from "../dados/contentCertificacoess";
+import { ContentCertificacoes } from "../dados/contentCertificacoes";
 
 interface PropsBg {
     cor: string;
@@ -9,13 +9,13 @@ interface PropsBg {
     corTitulo: string;
 }
 
-export default function Certificacoes({cor, titulo, corTitulo} : PropsBg) {
+export default function Certificacoes({ cor, titulo, corTitulo }: PropsBg) {
     const bgColor = cor;
     const Title = titulo;
     const corTitle = corTitulo;
 
     return (
-        <div className= {`${bgColor}` + " overflow-x-hidden"} > {/* "py-16  bg-gray-200" */}
+        <div className={`${bgColor}` + " overflow-x-hidden"} > {/* "py-16  bg-gray-200" */}
             <div className="container mx-auto px-4 ">
                 <div className="mb-6 ">
                     <div className="text-center">
