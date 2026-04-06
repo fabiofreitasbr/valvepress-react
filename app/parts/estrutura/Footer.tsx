@@ -1,7 +1,7 @@
 import RedesSociais from "@/app/parts/Componentes/RedesSociais";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../../public/img/logo.png";
+import Logo from "@/public/img/logo.png";
 import { ContentLinks } from "../dados/contentLinks";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
