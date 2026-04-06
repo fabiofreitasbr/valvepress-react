@@ -20,7 +20,7 @@ import {
   faSeedling,
   faShip,
   faWineGlass,
-} from "@fortawesome/free-solid-svg-icons"; //faBoxesStacked, faFaucetDrip, faFlaskVial, faGasPump, faIndustry, faSeedling, faShip, faWineGlass
+} from "@fortawesome/free-solid-svg-icons"; 
 
 export default function Menu() {
   const namePath = usePathname();
