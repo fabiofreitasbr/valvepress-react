@@ -416,7 +416,6 @@ export default function LandingPage() {
                     <div>
                       <div className="py-1 font-bold uppercase">E-mail:</div>
                       <div>{ContentLinks.emailShow}</div>
-                      <div>{ContentLinks.emailShow2}</div>
                     </div>
                   </div>
                 </a>

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { ContentCertificacoes } from "../dados/contentCertificacoess";
+import { ContentCertificacoes } from "../dados/contentCertificacoes";
 
 interface PropsBg {
     cor: string;

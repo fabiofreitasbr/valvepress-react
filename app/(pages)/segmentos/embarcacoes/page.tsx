@@ -39,7 +39,7 @@ const Terminais = () => {
             <></>
             <section className="py-10 md:py-16">
                 <div className="container mx-auto px-4 ">
-                    <Parceiros cor="" titulo="" />
+                    <Parceiros cor="" titulo="" corTitulo=""/>
                     <div className="p-8 shadow-2xl rounded-xl">
                         <h3 className="font-base text-blue-900 text-xl md:text-2xl my-2 py-4">
                             Entre em contato conosco

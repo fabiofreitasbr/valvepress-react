@@ -1,15 +1,14 @@
 export const ContentLinks = {
     titleSite: 'imagem',
 
-	email: 'mailto:orcamentos@valvepress.com.br',
+	email: 'mailto:comercial@valvepress.com.br',
     emailShow: 'comercial@valvepress.com.br',
-    emailShow2: 'orcamentos@valvepress.com.br',
 
 	phone: 'tel:+552137328087',
     phoneShow: '(21) 3732-8087',
 
-	whatsapp: 'https://wa.me/5521964646334',
-    whatsappShow: '(21) 96464-6334',
+	whatsapp: 'https://wa.me/5521978160550',
+    whatsappShow: '(21) 97816-0550',
     
 	facebook: 'https://www.facebook.com/',
     facebookShow: '/',
