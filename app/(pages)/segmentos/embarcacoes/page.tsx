@@ -1,7 +1,5 @@
 import HeaderTitle from "@/app/parts/estrutura/headerTitle";
 import Image from "next/image";
-import React from "react";
-import Embarcacoes from "@/public/img/embarcacoes.jpg";
 import NossosProdutos from "@/app/parts/Home/NossosProdutos";
 import ContatoForm from "@/app/parts/Componentes/ContatoFormPage";
 import Parceiros from "@/app/parts/Home/Certificacoes";
@@ -14,7 +12,7 @@ const Terminais = () => {
                 <div className="container mx-auto px-4 ">
                     <div className="block lg:flex lg:flex-row-reverse  ">
                         <div className="lg:w-3/6 flex justify-content items-center">
-                            <Image src={Embarcacoes} className="lg:w-2/3 w-1/2 sm:w-1/2 xl:w-1/2 mx-auto md:mb-6 mb-4 aspect-square object-cover rounded-full border-5 md:border-10 border-zinc-200" alt="" />
+                            <Image src={"/img/embarcacoes.jpg"} className="lg:w-2/3 w-1/2 sm:w-1/2 xl:w-1/2 mx-auto md:mb-6 mb-4 aspect-square object-cover rounded-full border-5 md:border-10 border-zinc-200" alt="" />
                         </div>
                         <div className="lg:w-3/6 text-zinc-600  ">
                             <div className="text-xs text-justify md:text-left md:text-xl lg:text-base 2xl:text-xl text-zinc-700 font-reading">
@@ -39,11 +37,7 @@ const Terminais = () => {
             <></>
             <section className="py-10 md:py-16">
                 <div className="container mx-auto px-4 ">
-<<<<<<< HEAD
-                    <Parceiros cor="" titulo="" corTitulo=""/>
-=======
                     <Parceiros cor="" titulo="" corTitulo="" />
->>>>>>> 341ea43d7445e8e758a11333022eb4380bec8bb5
                     <div className="p-8 shadow-2xl rounded-xl">
                         <h3 className="font-base text-blue-900 text-xl md:text-2xl my-2 py-4">
                             Entre em contato conosco

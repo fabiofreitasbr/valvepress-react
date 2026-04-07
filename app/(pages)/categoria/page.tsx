@@ -2,7 +2,6 @@
 import { usePathname } from "next/navigation";
 import HeaderTitle from "@/app/parts/estrutura/headerTitle";
 import NossosProdutos from "@/app/parts/Home/NossosProdutos";
-import React from "react";
 
 const Categoria = () => {
     const namePath = usePathname();

@@ -1,6 +1,5 @@
 import HeaderTitle from "@/app/parts/estrutura/headerTitle";
 import Image from "next/image";
-import React from "react";
 import Equipe from "@/public/img/equipe-tecnica.png";
 import LogoValvePress from "@/app/parts/Componentes/SobreFundo";
 import Duvidas from "@/app/parts/Componentes/Duvidas";

@@ -1,13 +1,10 @@
 "use client";
 import { usePathname } from "next/navigation";
 import HeaderTitle from "@/app/parts/estrutura/headerTitle";
-import React from "react";
 import Image from "next/image";
 import Tn from "@/public/img/produtos/purgadores/tn.png";
 import { ContentLinks } from "@/app/parts/dados/contentLinks";
 import Link from "next/link";
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const contentModelo = {
     produtos: [
@@ -56,10 +53,6 @@ export default function PurgadoresTN() {
                                         <h1 className="mt-1 text-center md:text-left text-base md:text-2xl  text-orange-500 uppercase font-medium">{produto.title}</h1>
                                         <p className="text-center md:text-left text-sm md:text-lg text-gray-300 py-2">{produto.text}</p>
                                     </div>
-                                    {/*<button type="button" className="bg-blue-900 hover:bg-blue-950 mx-auto md:mx-0 transition text-white font-medium rounded-full my-4 py-3 px-4 md:px-10 xl:px-16 block text-xs sm:text-base lg:text-lg uppercase">
-                                        <div className="flex gap-2 items-center justify-center">
-                                            <FontAwesomeIcon icon={faDownload} className=" w-5 h-5" /> Download do Prospecto em PDF da TN
-                                        </div></button> */}
                                 </div>
                             </div>
                         </div>
