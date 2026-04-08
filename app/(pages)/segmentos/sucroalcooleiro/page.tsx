@@ -1,6 +1,5 @@
 import HeaderTitle from "@/app/parts/estrutura/headerTitle";
 import Image from "next/image";
-import React from "react";
 import Sucroalcooleiro from "@/public/img/sucroalcooleiro.jpg";
 import NossosProdutos from "@/app/parts/Home/NossosProdutos";
 import ContatoForm from "@/app/parts/Componentes/ContatoFormPage";

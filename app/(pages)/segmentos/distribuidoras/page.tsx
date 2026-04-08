@@ -1,6 +1,5 @@
 import HeaderTitle from "@/app/parts/estrutura/headerTitle";
 import Image from "next/image";
-import React from "react";
 import Distribuidoras from "@/public/img/distribuidora.jpg";
 import NossosProdutos from "@/app/parts/Home/NossosProdutos";
 import ContatoForm from "@/app/parts/Componentes/ContatoFormPage";

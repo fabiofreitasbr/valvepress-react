@@ -1,14 +1,10 @@
 "use client";
 import { usePathname } from "next/navigation";
 import HeaderTitle from "@/app/parts/estrutura/headerTitle";
-import React from "react";
 import Image from "next/image";
 import Dz from "@/public/img/produtos/valvula-descarga/dz.png";
 import { ContentLinks } from "@/app/parts/dados/contentLinks";
 import Link from "next/link";
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import { faDownload } from "@fortawesome/free-solid-svg-icons";
-
 
 const contentModelo = {
     produtos: [
