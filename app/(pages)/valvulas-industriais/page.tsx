@@ -51,7 +51,7 @@ export default function LandingPage() {
                     className="h-3 md:h-6 mx-2"
                   />
                   <span className="hidden lg:block">
-                    {ContentLinks.phoneShow}
+                    {ContentLinks.whatsappShow}
                   </span>
                 </button>
               </a>
