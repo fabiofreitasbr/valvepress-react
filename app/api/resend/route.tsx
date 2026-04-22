@@ -7,7 +7,7 @@ export async function POST(req: Request) {
     const body = await req.json();
     try {
         const data = await resend.emails.send({
-            from: 'ValvePress <noreply@valvepress.com.br>',
+            from: 'ValvePress <comercial@valvepress.com.br>',
             to: ['fabiofreitassilvacontato@gmail.com'],
             subject: 'ValvePress - Contato Site',
             react: EmailTemplate(body),
