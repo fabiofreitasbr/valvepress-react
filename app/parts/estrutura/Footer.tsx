@@ -13,7 +13,7 @@ export default function Rodape() {
     <>
       <footer className="bg-blue-900  py-2 md:py-8 overflow-hidden">
         <a href={ContentLinks.whatsapp} target="_blank">
-          <button className="flex fixed w-16 h-16 bottom-5 right-[30px] bg-green-500 rounded-full justify-center items-center  shadow-xl shadow-zinc-400 z-20;">
+          <button className="flex fixed w-14 h-14 bottom-5 right-[30px] bg-green-500 rounded-full justify-center items-center  shadow-xl shadow-zinc-400 z-20;">
             <FontAwesomeIcon icon={faWhatsapp} className="text-white w-9 h-9" />
           </button>
         </a>
