@@ -26,7 +26,7 @@ export default function ContatoForm() {
       !data.email
         .toLowerCase()
         .match(
-          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
         )
     ) {
       setMessage("O e-mail digitado não é válido");
@@ -41,7 +41,7 @@ export default function ContatoForm() {
             reset();
           } else {
             setMessage(
-              "Mensagem não enviada, verifique todos os campos e tente novamente"
+              "Mensagem não enviada, verifique todos os campos e tente novamente",
             );
             setColorMessage("bg-red-700");
           }
@@ -65,13 +65,14 @@ export default function ContatoForm() {
         <input
           {...register("telefone")}
           className=" text-base lg:text-lg 2xl:text-xl font-light py-3 md:py-3 lg:py-4 px-4 md:px-4 lg:px-5 rounded-md md:rounded-lg block w-full bg-zinc-200 md:col-span-2 text-black"
-          
-          placeholder="Telefone" 
+          placeholder="Telefone"
         />
       </div>
-        <button className="my-3 flex justify-end place-items-center gap-2 md:gap-4 bg-orange-500 hover:bg-orange-600 transition-all rounded-full text-white text-base lg:text-lg px-4 py-2 md:px-8 lg:px-10 lg:py-2 font-normal uppercase">
-        Enviar
-      </button>
+      <div className="flex justify-end">
+        <button className="my-3 flex place-items-center gap-2 md:gap-4 bg-orange-500 hover:bg-orange-600 transition-all rounded-full text-white text-base lg:text-lg px-4 py-2 md:px-8 lg:px-10 lg:py-2 font-normal uppercase">
+          Enviar
+        </button>
+      </div>
       {message != "" ? (
         <div id="response-contact" className="w-full">
           <div
