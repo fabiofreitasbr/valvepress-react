@@ -36,7 +36,7 @@ export default function LandingPage() {
             </div>
             <div className="flex items-center">
               <a href={ContentLinks.phone} target="_blank">
-                <button className="flex justify-center items-center  bg-orange-500 py-2 px-2 md:px-4 mx-4 rounded-full text-lg text-white font-brandon">
+                <button className="flex justify-center items-center  bg-orange-500 hover:bg-orange-600 py-2 px-2 md:px-4 mx-4 rounded-full text-lg text-white font-brandon">
                   <FontAwesomeIcon icon={faPhone} className="h-3 md:h-6 mx-2" />
                   <span className="hidden lg:block">
                     {ContentLinks.phoneShow}
@@ -45,7 +45,7 @@ export default function LandingPage() {
               </a>
 
               <a href={ContentLinks.whatsapp} target="_blank">
-                <button className="flex justify-center items-center  bg-orange-500 py-2 px-2 md:px-4 mx-4 rounded-full text-lg text-white font-brandon">
+                <button className="flex justify-center items-center  bg-orange-500 hover:bg-orange-600 py-2 px-2 md:px-4 mx-4 rounded-full text-lg text-white font-brandon">
                   <FontAwesomeIcon
                     icon={faWhatsapp}
                     className="h-3 md:h-6 mx-2"
