@@ -7,6 +7,7 @@ export interface ContatoTypes {
   nome: string;
   email: string;
   telefone: string;
+  mensagem?: string;
 }
 
 export default function ContatoForm() {
