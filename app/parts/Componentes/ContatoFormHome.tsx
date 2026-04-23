@@ -70,7 +70,7 @@ export default function ContatoForm() {
         />
       </div>
       <div className="flex items-center justify-end">
-        <button className="my-3 flex place-items-center gap-2 md:gap-4 bg-orange-500 transition-all rounded-full text-white text-base lg:text-lg px-4 py-2 md:px-8 lg:px-10 lg:py-2 font-normal uppercase">
+        <button className="my-3 flex place-items-center gap-2 md:gap-4 bg-orange-500 hover:bg-orange-600 transition-all rounded-full text-white text-base lg:text-lg px-4 py-2 md:px-8 lg:px-10 lg:py-2 font-normal uppercase">
         Enviar
       </button>
       {message != "" ? (

@@ -111,7 +111,7 @@ export default function LandingPage() {
             <a href={ContentLinks.whatsappShow}>
               <button
                 type="button"
-                className="bg-orange-500 text-gray-100 font-medium rounded-full my-4 py-2 px-16 block text-lg mx-auto uppercase"
+                className="bg-orange-500 hover:bg-orange-600 text-gray-100 font-medium rounded-full my-4 py-2 px-16 block text-lg mx-auto uppercase"
               >
                 quero saber mais
               </button>
