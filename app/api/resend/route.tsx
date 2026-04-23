@@ -6,6 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
     const body = await req.json();
+
     try {
         const data = await resend.emails.send({
             from: "ValvePress <noreply@valvepress.com.br>",
@@ -18,7 +19,11 @@ export async function POST(req: Request) {
         });
 
         return NextResponse.json(data);
-    } catch (error) {
-        return NextResponse.json({ error });
+    } catch (error: any) {
+        console.error(error); // útil para ver no terminal
+        return NextResponse.json(
+            { error: error.message ?? "Erro desconhecido" },
+            { status: 500 }
+        );
     }
 }
