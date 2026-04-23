@@ -7,6 +7,16 @@ export function EmailTemplate(body: ContatoTypes) {
             <p>Nome: {body.nome}!</p>
             <p>E-mail: {body.email}!</p>
             <p>Telefone: {body.telefone}!</p>
+            {body.mensagem &&
+                (
+                    <>
+                        <h1>Mensagem:</h1>
+                        <p>
+                            {body.mensagem}
+                        </p>
+                    </>
+                )
+            }
         </div>
     )
 };
