@@ -10,7 +10,7 @@ export function EmailTemplate(body: ContatoTypes) {
             {body.mensagem &&
                 (
                     <>
-                        <h1>Mensage:</h1>
+                        <h1>Mensagem:</h1>
                         <p>
                             {body.mensagem}
                         </p>
